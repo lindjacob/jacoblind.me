@@ -1,9 +1,8 @@
-// import { useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Link = ({ href, children }) => {
-    // const location = useLocation();
-    // const isActive = location.pathname === href;
-    const isActive = true; // delete this line and uncomment the above, when the router is installed
+    const location = useLocation();
+    const isActive = location.pathname === href;
 
     return (
         <li>

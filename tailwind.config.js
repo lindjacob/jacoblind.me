@@ -6,7 +6,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        blue: '#3b82f6',
+        'blue-primary': '#3b82f6',
+        'blue-secondary': '#1d4ed8',
         black: '#181B1A',
       },
       fontFamily: {
