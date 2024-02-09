@@ -3,7 +3,9 @@ import Page from '../components/Page'
 const Home = () => {
     return (
         <Page>
-            <p>Home page</p>
+            <section className='h-screen'>
+                Home page
+            </section>
         </Page>
     )
 }

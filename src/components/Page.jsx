@@ -4,7 +4,7 @@ import Footer from './Footer'
 const Page = ({ children }) => {
     return (
         <div className='dark'>
-            <div className='max-w-screen-xl mx-auto dark:text-white'>
+            <div className='dark:text-white'>
                 <header>
                     <Navbar />
                 </header>
