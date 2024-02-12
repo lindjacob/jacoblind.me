@@ -4,12 +4,12 @@ import Container from '../Container';
 
 const Navbar = () => {
     return (
-        <nav className='bg-white dark:bg-black'>
+        <nav>
             <Container>
                 <div className='flex items-center justify-between'>
                     <a href={import.meta.env.VITE_API_URL} className='flex items-center space-x-3 rtl:space-x-reverse'>
-                        <img src={logo} className='h-4' alt='Jacob Lind' />
-                        <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-blue-primary'>Jacob Lind</span>
+                        <img src={logo} className='h-4' alt='logo' />
+                        <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>Jacob Lind</span>
                     </a>
                     <button type='button' className='inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600' aria-controls='navbar-default' aria-expanded='false'>
                         <span className='sr-only'>Open main menu</span>
@@ -18,7 +18,7 @@ const Navbar = () => {
                         </svg>
                     </button>
                     <div className='group hidden w-full md:block md:w-auto md:text-white' id='navbar-default'>
-                        <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-black dark:border-gray-700'>
+                        <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0'>
                             <Link href='/'>Home</Link>
                             <Link href='/profile'>Profile</Link>
                             <Link href='/portfolio'>Portfolio</Link>

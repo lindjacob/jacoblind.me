@@ -4,9 +4,12 @@
 
 @layer base {
     html {
-        @apply bg-black font-primary caret-transparent;
+        @apply bg-black-primary font-primary caret-transparent;
+    }
+    h1 {
+        @apply text-[10rem] leading-[10rem] font-headline;
     }
     h2 {
-        @apply text-5xl
+        @apply text-5xl my-6 leading-[3.5rem] font-semibold;
     }
 }

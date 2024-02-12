@@ -8,10 +8,14 @@ export default {
       colors: {
         'blue-primary': '#3b82f6',
         'blue-secondary': '#1d4ed8',
-        black: '#181B1A',
+        'black-primary': '#181B1A',
+        'black-secondary': '#1b2025',
+        'gray-primary': '#9ca3af',
+        'gray-secondary': '#c3cad5'
       },
       fontFamily: {
-        primary: ['Poppins', 'Tt Firs Neue', 'sans-serif'],
+        primary: ['Poppins', 'sans-serif'],
+        headline: ['Bebas Neue', 'sans-serif']
       },
     },
   },
