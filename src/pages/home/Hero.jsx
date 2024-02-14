@@ -13,7 +13,7 @@ const Page = () => {
                             What matters is that you get a developer who understands your business.
                         </p>
                     </div>
-                    <img src={standinPhoto} className='relative right-0 bottom-0 z-0' />
+                    <img src={standinPhoto} className='relative right-0 bottom-0' />
                 </div>
             </Container>
         </section>

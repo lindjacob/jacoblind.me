@@ -8,7 +8,7 @@ import SimpleFinancePlanner from '../../assets/simple-finance-planner.png';
 
 const Card = () => {
     return (
-        <a href='/portfolio/simple-finance-planner' className='w-1/3 flex flex-col bg-gray-800 rounded-3xl overflow-clip cursor-pointer group/portfolio transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 hover:scale-105 hover:shadow-lg'>
+        <a href='/portfolio/simple-finance-planner' className='w-1/3 flex flex-col bg-gray-800 rounded-3xl overflow-clip cursor-pointer group/parent transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 hover:scale-105 hover:shadow-lg'>
             <div className='h-3/4 box-border overflow-hidden'>
                 <img src={SimpleFinancePlanner} className='group-hover/portfolio:scale-110 transition-all duration-300' />
             </div>
@@ -19,7 +19,7 @@ const Card = () => {
                 </div>
                 <h4 className='text-2xl font-semibold mt-6 mb-2'>Simple Finance Planner</h4>
                 <p className='text-gray-primary text-lg'>A continous project where I build the tool I always needed to predict my finances</p>
-                <ArrowLink link='/portfolio/simple-finance-planner' anchorText='VIEW PROJECT' color='text-white' size='md' groupName='portfolio' />
+                <ArrowLink link='/portfolio/simple-finance-planner' anchorText='VIEW PROJECT' color='text-white' size='md' parentGroup={true} />
             </div>
         </a>
     )
