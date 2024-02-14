@@ -20,7 +20,7 @@ const Navbar = () => {
                     <div className='group hidden w-full md:block md:w-auto md:text-white' id='navbar-default'>
                         <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0'>
                             <Link href='/'>Home</Link>
-                            <Link href='/profile'>Profile</Link>
+                            <Link href='/resume'>Resume</Link>
                             <Link href='/portfolio'>Portfolio</Link>
                             <Link href='/contact'>Contact</Link>
                         </ul>
