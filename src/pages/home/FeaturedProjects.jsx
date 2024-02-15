@@ -10,7 +10,7 @@ const Card = () => {
     return (
         <a href='/portfolio/simple-finance-planner' className='w-1/3 flex flex-col bg-gray-800 rounded-3xl overflow-clip cursor-pointer group/parent transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 hover:scale-105 hover:shadow-lg'>
             <div className='h-3/4 box-border overflow-hidden'>
-                <img src={SimpleFinancePlanner} className='group-hover/portfolio:scale-110 transition-all duration-300' />
+                <img src={SimpleFinancePlanner} className='group-hover/parent:scale-110 transition-all duration-300' />
             </div>
             <div className='p-10'>
                 <div className='flex gap-4 self-end'>

@@ -7,7 +7,7 @@ import KompetenceKanalen from '../../assets/kompetence-kanalen-logo.svg';
 
 function PreviousPartners() {
     return (
-        <section className='bg-black-secondary relative z-10'>
+        <section className='bg-black-secondary'>
             <Container>
                 <div className='flex flex-col items-center'>
                     <h2 className='text-2xl uppercase'>Previously worked with</h2>

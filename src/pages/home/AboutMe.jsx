@@ -13,7 +13,7 @@ function AboutMe() {
     return (
         <section className='h-[70lvh] flex items-center'>
             <Container>
-                <div className='flex justify-between'>
+                <div className='flex'>
                     <div className='w-1/2 flex flex-col'>
                         <SectionTitle title='About Me' />
                         <h2>
@@ -27,7 +27,7 @@ function AboutMe() {
                         </p>
                         <ArrowLink link='/resume' anchorText='My Resume' color='text-blue-primary' size='lg' />
                     </div>
-                    <div className='w-1/2 flex flex-col items-center'>
+                    <div className='w-1/2 flex flex-col  items-center'>
                         <div className='flex justify-center items-center h-96 w-96 rounded-full bg-gray-800 relative mx-auto'>
                             <RiJavascriptFill size='5em' className='absolute top-0' />
                             <FaReact size='4em' className='absolute top-10 right-14' />
