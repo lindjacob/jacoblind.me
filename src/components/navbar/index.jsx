@@ -19,40 +19,46 @@ const Navbar = () => {
         }
     }, [menuOpen]);
 
+    const LinkList = () => {
+        return (
+            <>
+                <Link href='/'>Home</Link>
+                <Link href='/resume'>Resume</Link>
+                <Link href='/portfolio'>Portfolio</Link>
+                <Link href='/contact'>Contact</Link>
+            </>
+        )
+    }
+
     return (
         <div>
-            <nav className={`relative z-20 bg-black-primary ${menuOpen ? 'fixed top-0 left-0 right-0' : ''}`}>
+            <nav>
                 <Container>
                     <div className='flex items-center justify-between w-full relative'>
-                        <a href={import.meta.env.VITE_API_URL} className='flex items-center space-x-3 rtl:space-x-reverse'>
+                        <a href={import.meta.env.VITE_API_URL} className='flex items-center space-x-3 hover:scale-110 transition-all duration-300'>
                             <img src={logo} className='h-4' alt='logo' />
-                            <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>Jacob Lind</span>
+                            <span className='text-2xl font-semibold'>Jacob Lind</span>
                         </a>
                         <button
                             type='button'
-                            className='inline-flex items-center p-2 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600'
+                            className='p-2 text-gray-500 dark:text-white md:hidden'
                             aria-controls='menuOverlay'
                             aria-expanded={menuOpen}
                             onClick={() => setMenuOpen(!menuOpen)}
                         >
                             <GiHamburgerMenu size='2rem' />
                         </button>
+                        <div id='menuOverlay' className={`group hidden md:block md:w-auto md:text-white`}>
+                            <ul className='flex md:space-x-8'>
+                                <LinkList />
+                            </ul>
+                        </div>
                     </div>
                 </Container>
             </nav>
-            <div
-                id='menuOverlay'
-                className={`group fixed inset-x-0 z-10 h-screen bg-black-primary
-                                    ${menuOpen ? 'translate-x-0' : '-translate-x-full'} transform transition-all ease-out duration-300
-                                    md:w-auto md:text-white`}
-            >
-                <ul className='font-medium flex flex-col items-start p-8
-                                        md:p-0 md:flex-row md:space-x-8 md:mt-0 md:border-0'
-                >
-                    <Link href='/' className='py-2'>Home</Link>
-                    <Link href='/resume' className='py-2'>Resume</Link>
-                    <Link href='/portfolio' className='py-2'>Portfolio</Link>
-                    <Link href='/contact' className='py-2'>Contact</Link>
+            <div id='menuOverlay' className={`${menuOpen ? 'translate-x-0' : '-translate-x-full'} fixed inset-x-0 z-10 h-screen bg-black-primary md:hidden transform transition-all ease-out duration-300`}>
+                <ul className='p-8'>
+                    <LinkList />
                 </ul>
             </div>
         </div>
