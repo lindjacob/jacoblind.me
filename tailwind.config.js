@@ -17,6 +17,12 @@ export default {
         primary: ['Poppins', 'sans-serif'],
         headline: ['Bebas Neue', 'sans-serif']
       },
+      backgroundPosition: {
+        'hero-bg-pos': 'right 5rem bottom -5rem',
+      },
+      screens: {
+        'xsm': '400px',
+      },
     },
   },
   plugins: [

@@ -7,9 +7,9 @@
         @apply bg-black-primary font-primary caret-transparent;
     }
     h1 {
-        @apply text-[8rem] leading-[7rem] font-headline;
+        @apply text-7xl md:text-9xl md:leading-[7rem] font-headline;
     }
     h2 {
-        @apply text-5xl my-6 leading-[3.5rem] font-semibold;
+        @apply text-4xl my-2 md:my-6 font-semibold md:text-5xl md:leading-[3.5rem];
     }
 }

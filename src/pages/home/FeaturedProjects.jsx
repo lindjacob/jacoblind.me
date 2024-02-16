@@ -8,7 +8,9 @@ import SimpleFinancePlanner from '../../assets/simple-finance-planner.png';
 
 const Card = () => {
     return (
-        <a href='/portfolio/simple-finance-planner' className='w-1/3 flex flex-col bg-gray-800 rounded-3xl overflow-clip cursor-pointer group/parent transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 hover:scale-105 hover:shadow-lg'>
+        <a href='/portfolio/simple-finance-planner'
+            className='w-full lg:w-1/3 flex flex-col bg-gray-800 rounded-3xl overflow-clip cursor-pointer group/parent transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 hover:scale-105 hover:shadow-lg'
+        >
             <div className='h-3/4 box-border overflow-hidden'>
                 <img src={SimpleFinancePlanner} className='group-hover/parent:scale-110 transition-all duration-300' />
             </div>
@@ -27,23 +29,23 @@ const Card = () => {
 
 export default function FeaturedProjects() {
     return (
-        <section className='py-48 bg-black-secondary flex items-center'>
+        <section className='py-20 bg-black-secondary flex items-center'>
             <Container className='flex flex-col'>
-                <div className='flex justify-between mb-10'>
-                    <div className='w-1/2 flex flex-col'>
+                <div className='flex flex-col justify-between mb-10 lg:flex-row'>
+                    <div className='flex flex-col lg:w-2/3'>
                         <SectionTitle title='My Portfolio' />
                         <h2>
                             Take a look at the latest projects I've done
                         </h2>
                     </div>
-                    <div className='w-1/2 flex flex-row-reverse'>
-                        <div className='w-fit self-end mb-8'>
+                    <div className='flex lg:w-1/3 lg:flex-row-reverse'>
+                        <div className='w-fit self-end lg:mb-8'>
                             <ArrowLink link='/portfolio' anchorText='Browse all Projects' color='text-blue-primary' size='lg' />
                         </div>
                     </div>
                 </div>
 
-                <div className='flex gap-10 group/portfolios'>
+                <div className='group/portfolios flex flex-col lg:flex-row gap-10'>
                     <Card />
                     <Card />
                     <Card />

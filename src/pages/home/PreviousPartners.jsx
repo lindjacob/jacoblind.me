@@ -7,11 +7,11 @@ import KompetenceKanalen from '../../assets/kompetence-kanalen-logo.svg';
 
 function PreviousPartners() {
     return (
-        <section className='bg-black-secondary'>
+        <section className='py-10 bg-black-secondary'>
             <Container>
                 <div className='flex flex-col items-center'>
-                    <h2 className='text-2xl uppercase'>Previously worked with</h2>
-                    <div className='flex m-6 gap-10 h-10 justify-center items-center'>
+                    <h2 className='text-2xl uppercase text-center'>Previously worked with</h2>
+                    <div className='flex flex-wrap mt-6 gap-10 justify-center items-center'>
                         <img src={Dekra} className='w-32 mt-2' />
                         <img src={Dtails} className='w-32' />
                         <img src={KompetenceKanalen} className='w-32' />

@@ -34,7 +34,7 @@ const Navbar = () => {
         <div>
             <nav>
                 <Container>
-                    <div className='flex items-center justify-between w-full relative'>
+                    <div className='py-4 md:py-8 flex items-center justify-between w-full relative'>
                         <a href={import.meta.env.VITE_API_URL} className='flex items-center space-x-3 hover:scale-110 transition-all duration-300'>
                             <img src={logo} className='h-4' alt='logo' />
                             <span className='text-2xl font-semibold'>Jacob Lind</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
                         >
                             <GiHamburgerMenu size='2rem' />
                         </button>
-                        <div id='menuOverlay' className={`group hidden md:block md:w-auto md:text-white`}>
+                        <div className={`group hidden md:block md:w-auto md:text-white`}>
                             <ul className='flex md:space-x-8'>
                                 <LinkList />
                             </ul>

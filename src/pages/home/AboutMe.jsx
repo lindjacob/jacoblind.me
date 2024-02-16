@@ -11,10 +11,10 @@ import { SiTailwindcss, SiDjango, SiGooglecloud } from 'react-icons/si';
 
 function AboutMe() {
     return (
-        <section className='h-[70lvh] flex items-center'>
+        <section className='py-20 flex items-center'>
             <Container>
-                <div className='flex'>
-                    <div className='w-1/2 flex flex-col'>
+                <div className='flex flex-col gap-12 lg:flex-row'>
+                    <div className='flex flex-col lg:w-3/5'>
                         <SectionTitle title='About Me' />
                         <h2>
                             Coding has been my hobby since I was 14
@@ -27,24 +27,24 @@ function AboutMe() {
                         </p>
                         <ArrowLink link='/resume' anchorText='My Resume' color='text-blue-primary' size='lg' />
                     </div>
-                    <div className='w-1/2 flex flex-col  items-center'>
-                        <div className='flex justify-center items-center h-96 w-96 rounded-full bg-gray-800 relative mx-auto'>
-                            <RiJavascriptFill size='5em' className='absolute top-0' />
-                            <FaReact size='4em' className='absolute top-10 right-14' />
-                            <FaNodeJs size='4em' className='absolute top-10 left-14' />
-                            <FaCss3Alt size='4em' className='absolute top-32 right-16' />
-                            <FaGitAlt size='4em' className='absolute top-32 left-16' />
-                            <SiTailwindcss size='5em' className='absolute top-28' />
-                            <FaPython size='3rem' className='absolute right-0' />
-                            <HiCommandLine size='3rem' className='absolute left-0' />
-                            <FaHtml5 size='3rem' className='absolute bottom-28 left-28' />
-                            <TbSql size='4rem' className='absolute bottom-28 right-28' />
-                            <TbBrandGoogleBigQuery size='3rem' className='absolute bottom-20 right-6' />
-                            <BiLogoTypescript size='3rem' className='absolute bottom-20 left-6' />
-                            <FaDocker size='2rem' className='absolute bottom-16' />
-                            <SiGooglecloud size='2rem' className='absolute bottom-6 right-2/3' />
-                            <SiDjango size='2rem' className='absolute bottom-6 left-2/3' />
-                            <FaJava size='2rem' className='absolute bottom-0' />
+                    <div className='flex flex-col items-center lg:w-2/5'>
+                        <div className='flex justify-center items-center rounded-full bg-gray-800 relative mx-auto w-64 h-64 xsm:w-80 xsm:h-80 sm:h-96 sm:w-96'>
+                            <RiJavascriptFill className='absolute                   top-0                       size-12                                         xsm:size-16                                 sm:size-20' />
+                            <FaReact className='absolute                            top-7 right-9               size-10     xsm:top-9 xsm:right-10              xsm:size-14     sm:top-10 sm:right-14       sm:size-16 ' />
+                            <FaNodeJs className='absolute                           top-7 left-9                size-10     xsm:top-9 xsm:left-10               xsm:size-14     sm:top-10 sm:left-14        sm:size-16' />
+                            <SiTailwindcss className='absolute                      top-16                      size-12     xsm:top-[5.5rem]                    xsm:size-14     sm:top-28                   sm:size-16' />
+                            <FaCss3Alt className='absolute                          top-[5.7rem] right-12       size-10     xsm:top-28 xsm:right-14             xsm:size-14     sm:top-32                   sm:size-16' />
+                            <FaGitAlt className='absolute                           top-[5.5rem] left-12        size-10     xsm:top-[6.8rem] xsm:left-14        xsm:size-14     sm:top-[7.9rem]             sm:size-16' />
+                            <FaPython className='absolute                           right-0                     size-8                                          xsm:size-10                                 sm:size-12' />
+                            <HiCommandLine className='absolute                      left-0                      size-8                                          xsm:size-10                                 sm:size-12' />
+                            <FaHtml5 className='absolute                            bottom-20 left-20           size-8      xsm:bottom-24 xsm:left-24           xsm:size-10     sm:bottom-28 sm:left-28     sm:size-12' />
+                            <TbSql className='absolute                              bottom-[4.8rem] right-20    size-12     xsm:bottom-[5.8rem] xsm:right-24    xsm:size-14     sm:bottom-28 sm:right-28    sm:size-16' />
+                            <TbBrandGoogleBigQuery className='absolute              bottom-16 right-4           size-8      xsm:bottom-20 xsm:right-6           xsm:size-10                                 sm:size-12' />
+                            <BiLogoTypescript className='absolute                   bottom-16 left-4            size-8      xsm:bottom-20 xsm:left-6            xsm:size-10                                 sm:size-12' />
+                            <FaDocker className='absolute                           bottom-12                   size-6      xsm:bottom-14                       xsm:size-8      sm:bottom-16                sm:size-10' />
+                            <SiGooglecloud className='absolute                      bottom-4 right-2/3          size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />
+                            <SiDjango className='absolute                           bottom-4 left-2/3           size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />
+                            <FaJava className='absolute                             bottom-0                    size-6                                          xsm:size-8                                  sm:size-10' />
                         </div>
                         <p className='text-gray-primary mt-4'>Some tools I am familiar with</p>
                     </div>
