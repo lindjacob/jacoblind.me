@@ -1,4 +1,4 @@
-import Page from '../../components/Page';
+import Page from '../../components/layout/Page';
 import Hero from './Hero';
 import PreviousPartners from './PreviousPartners';
 import AboutMe from './AboutMe';

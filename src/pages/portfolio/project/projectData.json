@@ -1,0 +1,19 @@
+[
+    {
+        "id": "simple-finance-planner",
+        "title": "Simple Finance Planner",
+        "subheading": "This project was inspired by my own need to better predict my future financial situation. After many attempts to teach my girlfriend how I think about money, I decided to pivot the project to be more educational. My approach is a visual and interactive type of app, that at some point hopefully will be intuitive and instructive for users at all levels.",
+        "featuredImage": "/src/assets/simple-finance-planner.png",
+        "link": "https://simplefinanceplanner.jacoblind.me/",
+        "techIcons": [
+            "react",
+            "tailwind"
+        ]
+    },
+    {
+        "id": "project2",
+        "title": "Project 2",
+        "description": "This is Project 2",
+        "image": "/path/to/image2.jpg"
+    }
+]

@@ -1,6 +1,6 @@
 import profilePhoto from '../assets/profilePhoto.png';
 import ArrowLink from './ui/ArrowLink';
-import Container from './Container';
+import Container from './layout/Container';
 import { RiInstagramFill, RiFacebookCircleFill, RiWhatsappFill, RiLinkedinBoxFill, RiGithubFill  } from "react-icons/ri";
 
 const Footer = () => {

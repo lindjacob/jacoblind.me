@@ -10,8 +10,9 @@ export default {
         'blue-secondary': '#1d4ed8',
         'black-primary': '#181B1A',
         'black-secondary': '#1b2025',
-        'gray-primary': '#9ca3af',
-        'gray-secondary': '#c3cad5'
+        'black-tertiary': '#1f2937',
+        'gray-primary': '#c3cad5',
+        'gray-secondary': '#9ca3af',
       },
       fontFamily: {
         primary: ['Poppins', 'sans-serif'],
@@ -23,6 +24,11 @@ export default {
       screens: {
         'xsm': '400px',
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['odd', 'even'],
     },
   },
   plugins: [

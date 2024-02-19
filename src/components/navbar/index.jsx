@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../assets/logo.svg';
 import Link from './Link';
-import Container from '../Container';
+import Container from '../layout/Container';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {

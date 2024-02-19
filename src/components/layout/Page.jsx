@@ -1,5 +1,5 @@
-import Navbar from './navbar/index'
-import Footer from './Footer'
+import Navbar from '../navbar/index'
+import Footer from '../Footer'
 
 const Page = ({ children }) => {
     return (
