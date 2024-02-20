@@ -4,12 +4,15 @@
 
 @layer base {
     html {
-        @apply bg-black-primary font-primary caret-transparent;
+        @apply bg-black-primary font-primary caret-transparent scroll-smooth;
     }
     h1 {
-        @apply text-7xl md:text-9xl md:leading-[7rem] font-headline;
+        @apply text-8xl lg:text-9xl lg:leading-[7rem] font-headline text-white;
     }
     h2 {
-        @apply text-4xl my-2 md:my-6 font-semibold md:text-5xl md:leading-[3.5rem];
+        @apply text-4xl mt-2 mb-1 md:mt-10 md:mb-5 font-semibold md:text-5xl md:leading-[3.5rem] text-white;
+    }
+    h3 {
+        @apply text-3xl mt-1 mb-3 md:mt-4 font-semibold md:text-4xl md:leading-[3rem] text-white;
     }
 }

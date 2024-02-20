@@ -18,7 +18,7 @@ export default function projectCard({ link, title, description, img, icons }) {
                 </div>
                 <h4 className='text-2xl font-semibold mt-6 mb-2'>{title}</h4>
                 <p className='text-gray-primary text-lg'>{description}</p>
-                <ArrowLink link={link} anchorText='VIEW PROJECT' color='text-white' size='lg' parentGroup={true} className='mt-5' />
+                <ArrowLink link={link} anchorText='VIEW PROJECT' color='text-white' size='md' parentGroup={true} className='mt-5' />
             </div>
         </a>
     )

@@ -1,8 +1,8 @@
 import Container from './Container'
 
-const Section = ({ children, className }) => {
+const Section = ({ children, className, id }) => {
     return (
-        <section className={`py-20 flex justify-center items-center even:bg-black-secondary ${className}`}>
+        <section id={id} className={`py-10 md:py-20 flex items-center even:bg-black-secondary ${className}`}>
             <Container>
                 {children}
             </Container>

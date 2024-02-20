@@ -6,6 +6,9 @@ import Subheading from '../../../components/ui/Subheading';
 import NotFound from '../../NotFound';
 import ArrowLink from '../../../components/ui/ArrowLink';
 import IconBox from '../../../components/ui/IconBox';
+import ProjectInfo from './ProjectInfo';
+import ProjectDescription from './ProjectDescription';
+import ScrollButton from '../../../components/ui/ScrollButton';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { TbBrandGoogleBigQuery, TbSql } from 'react-icons/tb';
 import { RiJavascriptFill } from 'react-icons/ri';
@@ -27,6 +30,7 @@ const iconComponents = {
 };
 
 const ProjectPage = () => {
+  console.log("ProjectPage rendered");
   const { projectId } = useParams();
   const project = projectData.find(p => p.id === projectId);
 
@@ -37,40 +41,46 @@ const ProjectPage = () => {
   return (
     <Page>
       <Section>
-        <div>
-          <h1>{project.title}</h1>
-          <Subheading>{project.subheading}</Subheading>
+        <div className='flex flex-col sm:flex-row'>
+          <div className='sm:w-3/4 md:w-2/3'>
+            <h1>{project.title}</h1>
+            <Subheading>{project.subheading}</Subheading>
+          </div>
+          <div className='my-7 sm:w-1/4 md:w-1/3 flex sm:justify-end items-end'>
+            <ScrollButton href='#about' />
+          </div>
         </div>
-        <img src={project.image} className='py-10' />
+        <img src={project.featuredImage} className='py-10' />
       </Section>
-      <Section>
-        <div className='w-full relative flex justify-between'>
-          <div className='md:sticky'>
-            <div className='pb-5'>
-              <p className='text-gray-secondary font-semibold text-lg tracking-wider'>CLIENT</p>
-              <p className='text-white font-semibold text-2xl'>Personal Project</p>
-            </div>
-            <div className='pb-5'>
-              <p className='text-gray-secondary font-semibold text-lg tracking-wider'>SERVICES</p>
-              <p className='text-white font-semibold text-2xl'>NaN</p>
-            </div>
-            <div className='pb-5'>
-              <p className='text-gray-secondary font-semibold text-lg tracking-wider'>TECHNOLOGIES</p>
-              <div className='flex gap-2 mt-1'>
-                {project.techIcons.map(iconName => (
-                  <IconBox IconComponent={iconComponents[iconName]} />
+      <Section id='about'>
+        <div className='relative w-full flex flex-col md:flex-row md:gap-16 lg:gap-40'>
+          <div className='mb-10 grid grid-cols-2 gap-5 md:flex md:h-fit md:flex-col md:justify-start md:min-w-56 md:sticky md:top-10'>
+            <ProjectInfo content='client' project={project}>
+              <p className='text-white font-semibold text-xl md:text-2xl'>{project.client}</p>
+            </ProjectInfo>
+            <ProjectInfo content='services' project={project}>
+              <p className='text-white font-semibold text-xl md:text-2xl'>{project.services}</p>
+            </ProjectInfo>
+            <ProjectInfo content='technologies' project={project}>
+              <div className='flex flex-wrap gap-2 mt-1'>
+                {project.technologies.map(tech => (
+                  <IconBox IconComponent={iconComponents[tech]} />
                 ))}
               </div>
-            </div>
-            <div className='pb-5'>
-              <p className='text-gray-secondary font-semibold text-lg tracking-wider'>WEBSITE</p>
-              <ArrowLink link={project.link} anchorText='Live preview' blankLinkTarget={true} color='text-blue-primary' size='xl' />
-            </div>
+            </ProjectInfo>
+            <ProjectInfo content='github' project={project}>
+              <ArrowLink link={project.github} anchorText='Repository' blankLinkTarget={true} size={'lg'} />
+            </ProjectInfo>
+            <ProjectInfo content='website' project={project}>
+              <ArrowLink link={project.website} anchorText='Live preview' blankLinkTarget={true} size={'xl'} />
+            </ProjectInfo>
           </div>
-          <div className=''>
-            <h2>About the project</h2>
-            <h3>Project goal</h3>
-            <h2>Project results</h2>
+          <div>
+            <ProjectDescription title='About the project' content='about' project={project} />
+            <ProjectDescription title='Project goal' content='goal' project={project} />
+            <ProjectDescription title='Project result' content='result' project={project} />
+            <ProjectDescription title='Future ideas' content='future' project={project} />
+            <ProjectDescription title='Collaborations' content='collaborations' project={project} />
           </div>
         </div>
       </Section>

@@ -18,8 +18,8 @@ export default function FeaturedProjects() {
                     </h2>
                 </div>
                 <div className='flex lg:w-1/3 lg:flex-row-reverse'>
-                    <div className='w-fit self-end lg:mb-8'>
-                        <ArrowLink link='/portfolio' anchorText='Browse all Projects' color='text-blue-primary' size='xl' weight='semibold' />
+                    <div className='mt-5 w-fit self-end lg:mb-8'>
+                        <ArrowLink link='/portfolio' anchorText='Browse all Projects' size='xl' weight='semibold' />
                     </div>
                 </div>
             </div>

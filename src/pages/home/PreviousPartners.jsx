@@ -6,7 +6,7 @@ import KompetenceKanalen from '../../assets/kompetence-kanalen-logo.svg';
 
 function PreviousPartners() {
     return (
-        <Section className='dark:py-10'>
+        <Section className='justify-center dark:py-10'>
             <div className='flex flex-col items-center'>
                 <h2 className='mt-0 text-2xl uppercase text-center'>Previously worked with</h2>
                 <div className='flex flex-wrap mt-6 gap-10 justify-center items-center'>

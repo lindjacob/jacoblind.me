@@ -37,25 +37,24 @@ const Footer = () => {
                         </div>
                     </div>
                     <div>
-                        <a href='/contact' className='flex items-center mt-16 mb-8 text-white my-auto group hover:cursor-pointer lg:mt-0'>
-                            <h2>Get in touch</h2>
-                            <svg className='w-12 h-12 ml-4 text-blue-primary group-hover:translate-x-2 transition-transform duration-300' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 10'>
+                        <a href='/contact' className='flex items-center mt-16 text-white my-auto group hover:cursor-pointer lg:mt-0'>
+                            <p className='text-4xl mt-2 mb-1 md:mt-10 md:mb-5 font-semibold md:text-5xl md:leading-[3.5rem] text-white'>Get in touch</p>
+                            <svg className='size-12 mt-5 ml-4 text-blue-primary group-hover:translate-x-2 transition-transform duration-300' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 10'>
                                 <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 5h12m0 0L9 1m4 4L9 9' />
                             </svg>
                         </a>
                         <div className='flex flex-wrap lg:justify-between'>
-                            <div className='w-50 mr-10'>
+                            <div className='w-50 mr-10 mt-5'>
                                 <p className='mb-1 uppercase text-gray-400 font-semibold'>Email me:</p>
-                                <ArrowLink link='mailto:contact@jacoblind.me' anchorText='contact@jacoblind.me' color='text-white' size='sm' />
+                                <ArrowLink link='mailto:contact@jacoblind.me' anchorText='contact@jacoblind.me' color='text-white' size='md' />
                             </div>
-                            <div>
+                            <div className='mt-5'>
                                 <p className='mb-1 uppercase text-gray-400 font-semibold'>Call me:</p>
-                                <ArrowLink link='tel:004521221945' anchorText='+45 2122 1945' color='text-white' size='sm' />
+                                <ArrowLink link='tel:004521221945' anchorText='+45 2122 1945' color='text-white' size='md' />
                             </div>
                         </div>
                     </div>
                 </div>
-
             </Container>
         </div>
     )
