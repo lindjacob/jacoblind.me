@@ -1,40 +1,22 @@
 import profilePhoto from '../assets/profilePhoto.png';
 import ArrowLink from './ui/ArrowLink';
 import Container from './layout/Container';
-import { RiInstagramFill, RiFacebookCircleFill, RiWhatsappFill, RiLinkedinBoxFill, RiGithubFill  } from "react-icons/ri";
+import SocialBar from './ui/SocialBar';
 
 const Footer = () => {
-    const iconClasses = 'w-9 h-9 dark:fill-gray-200 group-hover:fill-gray-500 dark:hover:fill-white hover:-translate-y-2 transition-all duration-300'
-
     return (
         <div className='border-t-[1px] border-gray-500'>
             <Container>
                 <div className='lg:h-96 h-[32rem] flex flex-col justify-center lg:flex-row lg:justify-between lg:items-center'>
                     <div className='flex flex-col'>
                         <div className='flex'>
-                            <img src={profilePhoto} className='rounded-full h-24 w-24 sm:h-32 sm:w-32 object-cover' />
+                            <img src={profilePhoto} className='rounded-full size-24 sm:h-32 sm:w-32 object-cover' />
                             <div className='ml-4 md:ml-8 my-auto'>
                                 <p className='text-4xl font-semibold'>Jacob Lind</p>
                                 <p className='text-xl text-gray-400 font-medium'>Full-Stack Web Developer</p>
                             </div>
                         </div>
-                        <div className='flex mt-6 group gap-6'>
-                            <a href='https://www.facebook.com/jacob.lind1' target='_blank' className='cursor-pointer'>
-                                <RiFacebookCircleFill className={iconClasses} />
-                            </a>
-                            <a href='https://www.instagram.com/jacobhlind/' target='_blank' className='cursor-pointer'>
-                                <RiInstagramFill className={iconClasses} />
-                            </a>
-                            <a href='https://wa.me/004521221945' rel='nofollow' target='_blank' className='cursor-pointer'>
-                                <RiWhatsappFill className={iconClasses} />
-                            </a>
-                            <a href='https://www.linkedin.com/in/jacoblindseo/' target='_blank' className='cursor-pointer'>
-                                <RiLinkedinBoxFill className={iconClasses} />
-                            </a>
-                            <a href='https://github.com/lindjacob' target='_blank' className='cursor-pointer'>
-                                <RiGithubFill className={iconClasses} />
-                            </a>
-                        </div>
+                        <SocialBar />
                     </div>
                     <div>
                         <a href='/contact' className='flex items-center mt-16 text-white my-auto group hover:cursor-pointer lg:mt-0'>

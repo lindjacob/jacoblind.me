@@ -11,12 +11,12 @@ export default {
         'black-primary': '#181B1A',
         'black-secondary': '#1b2025',
         'black-tertiary': '#1f2937',
-        'gray-primary': '#c3cad5',
+        'gray-primary': '#e5e7eb',
         'gray-secondary': '#9ca3af',
+        'slate-850': '#1a2434'
       },
       fontFamily: {
-        primary: ['Poppins', 'sans-serif'],
-        headline: ['Bebas Neue', 'sans-serif']
+        primary: ['Poppins', 'sans-serif']
       },
       backgroundPosition: {
         'hero-bg-pos': 'right 5rem bottom -5rem',

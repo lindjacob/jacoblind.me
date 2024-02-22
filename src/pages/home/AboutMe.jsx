@@ -12,17 +12,12 @@ import { SiTailwindcss, SiDjango, SiGooglecloud, SiNextdotjs } from 'react-icons
 function AboutMe() {
     return (
         <Section>
-            <div className='flex flex-col gap-12 lg:flex-row'>
+            <div className='flex flex-col gap-12 lg:flex-row items-center'>
                 <div className='flex flex-col lg:w-3/5'>
                     <SectionTitle title='About Me' />
-                    <h2>
-                        Coding has been my hobby since I was 14
-                    </h2>
+                    <h2>Blending Technical Excellence with Entrepreneurial Spirit</h2>
                     <p className='text-gray-secondary'>
-                        I am a creative, self-driven individual with a passion for overcoming challenges and continuously learning.
-                        Highly adaptable and thriving in fast-paced environments.
-                        I excel when given responsability, ensuring high productivity and seamless collaboration with an emphasis on good communication.
-                        Ambitious and sociable, I bring a positive energy and an eagerness to innovate and grow.
+                        I'm a full stack developer who thrives at the intersection of coding, business, and problem-solving. With a journey that took me from a hobbyist coder at 14 to an entrepreneurial tech expert, I've transformed challenges into opportunities and ideas into reality. My career is a testament to my passion for development and my commitment to excellence in every project. Leveraging my unique blend of technical skills and real-world experience, I always aim to create solutions that not only meet but exceed expectations.
                     </p>
                     <ArrowLink link='/resume' anchorText='My Resume' size='xl' className='mt-8' />
                 </div>

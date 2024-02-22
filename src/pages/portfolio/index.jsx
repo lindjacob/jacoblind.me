@@ -20,7 +20,7 @@ export default function index() {
                     <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={[FaReact, SiTailwindcss]} />
                     <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={[FaReact, SiTailwindcss]} />
                     <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={[FaReact, SiTailwindcss]} />
-                    <div className='w-full sm:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.333%-1rem)] flex items-center justify-center rounded-3xl transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 border-4 border-dashed border-gray-800'>
+                    <div className='w-full min-h-[580px] sm:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.333%-1rem)] flex items-center justify-center rounded-3xl transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 border-4 border-dashed border-gray-800'>
                         <p className='text-xl text-gray-secondary'>More projects coming</p>
                     </div>
                 </div>
