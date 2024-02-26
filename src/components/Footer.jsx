@@ -13,15 +13,15 @@ const Footer = () => {
                             <img src={profilePhoto} className='rounded-full size-24 sm:h-32 sm:w-32 object-cover' />
                             <div className='ml-4 md:ml-8 my-auto'>
                                 <p className='text-4xl font-semibold'>Jacob Lind</p>
-                                <p className='text-xl text-gray-400 font-medium'>Full-Stack Web Developer</p>
+                                <p className='text-xl text-gray-400 font-medium'>Full Stack Developer</p>
                             </div>
                         </div>
                         <SocialBar />
                     </div>
                     <div>
-                        <a href='/contact' className='flex items-center mt-16 text-white my-auto group hover:cursor-pointer lg:mt-0'>
-                            <p className='text-4xl mt-2 mb-1 md:mt-10 md:mb-5 font-semibold md:text-5xl md:leading-[3.5rem] text-white'>Get in touch</p>
-                            <svg className='size-12 mt-5 ml-4 text-blue-primary group-hover:translate-x-2 transition-transform duration-300' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 10'>
+                        <a href='/contact' className='flex items-center mb-1 md:mt-14 mt-16 text-white my-auto group hover:cursor-pointer lg:mt-0'>
+                            <p className='text-4xl mt-2 font-semibold md:text-5xl md:leading-[3.5rem] text-white lg:mt-0'>Get in touch</p>
+                            <svg className='size-10 ml-4 mt-2 md:size-12 lg:mt-0 text-blue-primary group-hover:translate-x-2 transition-transform duration-300' aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 10'>
                                 <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 5h12m0 0L9 1m4 4L9 9' />
                             </svg>
                         </a>

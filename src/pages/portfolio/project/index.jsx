@@ -2,7 +2,6 @@ import { useParams } from 'react-router-dom';
 import projectData from './projectData.json';
 import Page from '../../../components/layout/Page';
 import Section from '../../../components/layout/Section';
-import Subheading from '../../../components/ui/Subheading';
 import NotFound from '../../NotFound';
 import ArrowLink from '../../../components/ui/ArrowLink';
 import IconBox from '../../../components/ui/IconBox';
@@ -30,7 +29,6 @@ const iconComponents = {
 };
 
 const ProjectPage = () => {
-  console.log("ProjectPage rendered");
   const { projectId } = useParams();
   const project = projectData.find(p => p.id === projectId);
 
@@ -44,7 +42,7 @@ const ProjectPage = () => {
         <div className='flex flex-col sm:flex-row'>
           <div className='sm:w-3/4 md:w-2/3'>
             <h1>{project.title}</h1>
-            <Subheading>{project.subheading}</Subheading>
+            <p className='subheading'>{project.subheading}</p>
           </div>
           <div className='my-7 sm:w-1/4 md:w-1/3 flex sm:justify-end items-end'>
             <ScrollButton href='#about' />
@@ -56,10 +54,10 @@ const ProjectPage = () => {
         <div className='relative w-full flex flex-col md:flex-row md:gap-16 lg:gap-40'>
           <div className='mb-10 grid grid-cols-2 gap-5 md:flex md:h-fit md:flex-col md:justify-start md:min-w-56 md:sticky md:top-10'>
             <ProjectInfo content='client' project={project}>
-              <p className='text-white font-semibold text-xl md:text-2xl'>{project.client}</p>
+              <p className='opacity-100 font-semibold text-xl md:text-2xl'>{project.client}</p>
             </ProjectInfo>
             <ProjectInfo content='services' project={project}>
-              <p className='text-white font-semibold text-xl md:text-2xl'>{project.services}</p>
+              <p className='opacity-100 font-semibold text-xl md:text-2xl'>{project.services}</p>
             </ProjectInfo>
             <ProjectInfo content='technologies' project={project}>
               <div className='flex flex-wrap gap-2 mt-1'>

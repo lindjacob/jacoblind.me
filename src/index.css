@@ -21,4 +21,16 @@
     p {
         @apply text-white font-light opacity-85;
     }
+    .subheading {
+        @apply opacity-85 text-xl;
+    }
+    .button {
+        @apply w-fit px-4 py-3 rounded-2xl flex gap-3 bg-blue-primary hover:bg-blue-600 transition-all duration-300 cursor-pointer;
+    }
+    .button.secondary {
+        @apply bg-opacity-15 hover:bg-opacity-30
+    }
+    .button.small {
+        @apply px-3 py-2 gap-2 rounded-xl text-sm
+    }
 }
