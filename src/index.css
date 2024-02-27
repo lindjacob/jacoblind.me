@@ -4,28 +4,42 @@
 
 @layer base {
     html {
-        @apply bg-black-primary font-primary caret-transparent scroll-smooth;
+        @apply bg-black-primary font-primary caret-transparent scroll-smooth text-white;
     }
     h1 {
-        @apply mb-5 text-6xl sm:leading-[4.5rem] font-semibold text-white tracking-tight md:text-7xl md:leading-[5.4rem] lg:text-8xl lg:leading-[7rem];
+        @apply mb-5 text-6xl sm:leading-[4.5rem] font-semibold tracking-tight md:text-7xl md:leading-[5.4rem] lg:text-8xl lg:leading-[7rem];
     }
     h2 {
-        @apply mb-4 text-4xl leading-[3rem] md:text-5xl md:leading-[3.6rem] md:mt-10 md:mb-5 font-semibold text-white;
+        @apply mb-4 text-4xl leading-[3rem] md:text-5xl md:leading-[3.6rem] md:mt-10 md:mb-5 font-semibold
     }
     h3 {
-        @apply text-3xl md:text-4xl md:leading-[2.7rem] font-semibold text-white;
+        @apply text-2xl md:text-4xl md:leading-[2.7rem] font-semibold
     }
     h4 {
         @apply text-xl;
     }
     p {
-        @apply text-white font-light opacity-85;
+        @apply font-light opacity-85;
     }
+
+    #resume h2 {
+        @apply text-2xl md:text-3xl mb-2;
+    }
+    #resume h3 {
+        @apply text-lg md:text-xl font-normal;
+    }
+    #resume h4 {
+        @apply md:text-base;
+    }
+    #resume p {
+        @apply text-sm;
+    }
+
     .subheading {
         @apply opacity-85 text-xl;
     }
     .button {
-        @apply w-fit px-4 py-3 rounded-2xl flex gap-3 bg-blue-primary hover:bg-blue-600 transition-all duration-300 cursor-pointer;
+        @apply w-full xsm:w-fit px-4 py-3 rounded-2xl flex justify-center gap-3 bg-blue-primary hover:bg-blue-600 transition-all duration-300 cursor-pointer;
     }
     .button.secondary {
         @apply bg-opacity-15 hover:bg-opacity-30

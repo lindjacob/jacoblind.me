@@ -7,6 +7,21 @@ import auLogoWhite from '../../assets/aarhus-university-logo-white.svg';
 import { useInView } from 'react-intersection-observer';
 import profilePhoto from '../../assets/profilePhoto.png';
 
+const CtaButtons = () => {
+    return (
+        <div className='flex flex-col w-full justify-center gap-4 mt-5 xsm:mt-10 xsm:flex-row'>
+            <a href='mailto:contact@jacoblind.me' className='button'>
+                <PiEnvelopeSimple size='1.5rem' />
+                Send Email
+            </a>
+            <button className='button secondary'>
+                <PiDownloadSimple size='1.5rem' />
+                Download Resume
+            </button>
+        </div>
+    )
+}
+
 const Container = ({ children, className }) => {
     const { ref, inView } = useInView({
         triggerOnce: true,
@@ -28,7 +43,7 @@ const ContainerHeader = ({ IconComponent, title, description }) => {
         <>
             <IconBox IconComponent={IconComponent} />
             <div>
-                <h2 className='text-2xl text-white mb-3'>{title}</h2>
+                <h2>{title}</h2>
                 <p className='mb-8 max-w-[430px]'>{description}</p>
             </div>
             <Divider />
@@ -36,12 +51,14 @@ const ContainerHeader = ({ IconComponent, title, description }) => {
     )
 }
 
-const Divider = ({ mx = 6 }) => {
-    return <div className={`h-[1px] -mx-${mx} my-6 bg-slate-700`} />
+const Divider = ({ short }) => {
+    const mx = short ? 'mx-0' : '-mx-6';
+
+    return <div className={`h-[1px] ${mx} my-6 bg-slate-700`} />
 }
 
 const IconBox = ({ IconComponent }) => {
-    return <div className='bg-slate-800 rounded-2xl p-3 w-fit border-[1px] border-slate-700'><IconComponent className='size-8' /></div>
+    return <div className='bg-slate-800 rounded-2xl p-3 w-fit border-[1px] border-slate-700 mb-8 md:mb-0'><IconComponent className='size-8' /></div>
 }
 
 const LocationLine = ({ children }) => {
@@ -55,7 +72,7 @@ const LocationLine = ({ children }) => {
 
 const DateComponent = ({ dateFromTo }) => {
     return (
-        <div className='flex justify-end'>
+        <div className='flex'>
             <div className='flex h-fit items-center bg-slate-800 px-3 py-[6px] gap-2 rounded-lg text-sm w-fit border-[1px] border-slate-700'>
                 <IoCalendarOutline />
                 <p className='opacity-100'>{dateFromTo}</p>
@@ -67,7 +84,7 @@ const DateComponent = ({ dateFromTo }) => {
 const CredentialComponent = ({ title, issuer, date }) => {
     return (
         <div>
-            <h3 className='text-xl font-normal'>{title}</h3>
+            <h3>{title}</h3>
             <div className='flex items-center'>
                 <p className='text-sm'>{issuer}</p>
                 <LuDot />
@@ -84,7 +101,7 @@ const CredentialComponent = ({ title, issuer, date }) => {
 const AwardComponent = ({ title, issuer, field, date, description }) => {
     return (
         <div>
-            <h3 className='text-xl font-normal'>{title}</h3>
+            <h3>{title}</h3>
             <div className='flex items-center mb-4'>
                 <p className='text-sm'>Issued by {issuer}</p>
                 <LuDot />
@@ -103,9 +120,9 @@ const ExperienceComponent = ({ position, company, type, location, dateFromTo, de
         <div className='flex gap-6'>
             <div className='size-2 bg-white rounded-full mt-[10px] -ml-[5px]' />
             <div className='w-full'>
-                <div className='flex justify-between'>
-                    <div>
-                        <h3 className='text-xl font-normal'>{position}</h3>
+                <div className='flex flex-col md:flex-row md:justify-between'>
+                    <div className='mb-4 md:mb-0'>
+                        <h3>{position}</h3>
                         <div className='flex gap-1 items-center'>
                             <p className='text-sm'>{company}</p>
                             <LuDot />
@@ -126,7 +143,7 @@ const ExperienceComponent = ({ position, company, type, location, dateFromTo, de
 const SkillGroup = ({ title, children }) => {
     return (
         <div>
-            <h3 className='text-xl font-normal mb-3'>{title}</h3>
+            <h3 className='mb-2'>{title}</h3>
             <div className='flex flex-wrap gap-2'>
                 {children}
             </div>
@@ -146,16 +163,16 @@ const SkillComponent = ({ title }) => {
 const LanguageComponent = ({ code, language, level }) => {
     return (
         <>
-            <h3 className='text-xl font-normal'><span className='text-sm uppercase'>{code}</span> {language}</h3>
+            <h3><span className='text-sm uppercase'>{code}</span> {language}</h3>
             <p className='text-sm'>{level}</p>
-            <Divider mx='10' />
+            <Divider short={true} />
         </>
     )
 }
 
 const DotLine = ({ text1, text2, className }) => {
     return (
-        <div className={`flex items-center text-sm mt-1 mb-4 ${className}`}>
+        <div className={`flex items-center text-sm mb-4 ${className}`}>
             <p>{text1}</p>
             <LuDot />
             <p>{text2}</p>
@@ -168,7 +185,7 @@ const Recommendation = ({ name, position, date, text }) => {
         <div className='flex items-stretch'>
             <div className='w-[2px] bg-green-500 my-1 mr-6' />
             <div>
-                <h3 className='text-xl font-normal'>{name}</h3>
+                <h3>{name}</h3>
                 <DotLine text1={position} text2={date} className={'mb-4'} />
                 <p className='text-sm max-w-[560px]'>
                     {text}
@@ -181,7 +198,7 @@ const Recommendation = ({ name, position, date, text }) => {
 export default function index() {
     return (
         <Page>
-            <div className='max-w-[768px] mx-auto py-24'>
+            <div id='resume' className='mx-6 md:max-w-[768px] md:mx-auto py-24'>
                 <div className='text-center'>
                     <div className='flex justify-center mb-10'>
                         <div className='px-3 py-2 border-2 border-black-tertiary rounded-lg flex items-center gap-2'>
@@ -192,22 +209,13 @@ export default function index() {
                     <h1>Jacob Lind</h1>
                     <p className='subheading -mt-4'>Full Stack Developer with Expertise in Business Efficiency</p>
                 </div>
-                <div className='flex justify-center gap-4 mt-10'>
-                    <a href='mailto:contact@jacoblind.me' className='button'>
-                        <PiEnvelopeSimple size='1.5rem' />
-                        Send Email
-                    </a>
-                    <button className='button secondary'>
-                        <PiDownloadSimple size='1.5rem' />
-                        Download Resume
-                    </button>
-                </div>
+                <CtaButtons />
                 <div className='mt-24 flex flex-col gap-4'>
-                    <div className='flex gap-4'>
-                        <Container className={`md:w-1/3 bg-[url('src/assets/profilePhoto.png')] bg-cover bg-center`} />
-                        <Container className='md:w-2/3 pb-2'>
+                    <div className='flex flex-col md:flex-row gap-4'>
+                        <Container className={`w-full min-h-[350px] md:min-h-0 md:w-1/3 bg-[url('src/assets/profilePhoto.png')] bg-cover bg-center`} />
+                        <Container className='w-full md:w-2/3 pb-2'>
                             <IconBox IconComponent={PiUserList} />
-                            <h2 className='text-2xl text-white mb-3'>Professional profile</h2>
+                            <h2>Professional profile</h2>
                             <p>
                                 Accomplished Senior Data Scientist & Business Consultant with a proven track record of leveraging advanced analytics to drive strategic decision-making and optimize business processes.
                                 Demonstrated expertise in developing innovative solutions to complex problems, coupled with exceptional communication skills to effectively convey insights to stakeholders at all levels.
@@ -262,9 +270,9 @@ export default function index() {
                             title={'Education'}
                             description={'Degrees in the specialized fields of computer science'}
                         />
-                        <div className='flex justify-between items-center'>
-                            <div>
-                                <h3 className='text-xl font-normal'>Aarhus University</h3>
+                        <div className='flex flex-col md:flex-row justify-between md:items-center'>
+                            <div className='mb-4 md:mb-0'>
+                                <h3>Aarhus University</h3>
                                 <div className='flex items-center'>
                                     <p className='text-sm'>Bachelor's degree</p>
                                     <LuDot />
@@ -296,7 +304,7 @@ export default function index() {
                             description={'Professional accreditations and certifications demonstrating expertise and compliance with industry standards.'}
                         />
                         <div className='flex justify-between items-center'>
-                            <div className='grid grid-cols-2 gap-10 w-full'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 w-full'>
                                 <div className='flex flex-col gap-10'>
                                     <CredentialComponent title={'Data Analysis & Visualization'} issuer={'NexusWorks'} date={'Jan 2024'} />
                                     <CredentialComponent title={'Data Analysis & Visualization'} issuer={'NexusWorks'} date={'Jan 2024'} />
@@ -372,7 +380,7 @@ export default function index() {
                             description={'Acknowledgments for exceptional achievements and contributions in professional endeavors.'}
                         />
                         <div className='flex justify-between items-center'>
-                            <div className='grid grid-cols-2 gap-10 w-full'>
+                            <div className='grid grid-cols-1 sm:grid-cols-2 gap-10 w-full'>
                                 <div className='flex flex-col gap-10'>
                                     <AwardComponent title='Data Science Excellence Award' issuer='Nexus' field='Data Science' description='Recognizing outstanding contributions in pioneering data-driven solutions and strategic insights.' date='Dec 2023' />
                                 </div>
@@ -403,16 +411,7 @@ export default function index() {
                         <img src={profilePhoto} className='size-20 object-cover rounded-xl mb-4' />
                         <h3>Feel Free to Reach Out</h3>
                         <p>Let's start a productive converstaion</p>
-                        <div className='flex justify-center gap-4 mt-10'>
-                            <a href='mailto:contact@jacoblind.me' className='button'>
-                                <PiEnvelopeSimple size='1.5rem' />
-                                Send Email
-                            </a>
-                            <button className='button secondary'>
-                                <PiDownloadSimple size='1.5rem' />
-                                Download Resume
-                            </button>
-                        </div>
+                        <CtaButtons />
                     </div>
                 </div>
             </div>
