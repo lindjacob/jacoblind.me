@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{js,jsx}',
-            'node_modules/flowbite-react/lib/esm/**/*.js'
-  ],
+  content: ['./src/**/*.{js,jsx}'],
   theme: {
     extend: {
       colors: {
@@ -22,7 +20,7 @@ export default {
         'hero-bg-pos': 'right 5rem bottom -5rem',
       },
       screens: {
-        'xsm': '400px',
+        'xsm': '440px',
       },
     },
   },
