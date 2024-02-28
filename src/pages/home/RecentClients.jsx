@@ -6,9 +6,9 @@ function PreviousPartners() {
     const { ref: ref, transitionClasses: transitionClasses } = useInViewTransition();
 
     return (
-        <Section className={`justify-center dark:py-10`}>
+        <Section className={`justify-center h-[1lvh]`}>
             <div className='flex flex-col items-center'>
-                <h2 className={`mt-0 text-2xl uppercase text-center ${transitionClasses}`} ref={ref}>Previously worked with</h2>
+                <h2 className={`mt-0 text-2xl uppercase text-center ${transitionClasses}`} ref={ref}>Recently worked with</h2>
                 <PartnersLogoBar />
             </div>
         </Section>

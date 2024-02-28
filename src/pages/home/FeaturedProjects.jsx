@@ -3,8 +3,6 @@ import Section from '../../components/layout/Section';
 import SectionTitle from '../../components/ui/SectionTitle';
 import ArrowLink from '../../components/ui/ArrowLink';
 import ProjectCard from '../../components/ProjectCard';
-import { FaReact } from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
 import simpleFinancePlannerImg from '../../assets/simple-finance-planner.png';
 import useInViewTransition from '../../hooks/useInViewTransition';
 
@@ -30,9 +28,9 @@ export default function FeaturedProjects() {
                 </div>
             </div>
             <div ref={ref2} className={`group/portfolios flex flex-col sm:flex-row sm:flex-wrap gap-5 ${transitionClasses2}`}>
-                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={[FaReact, SiTailwindcss]} />
-                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={[FaReact, SiTailwindcss]} />
-                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={[FaReact, SiTailwindcss]} />
+                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
+                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
+                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
             </div>
         </Section>
     )

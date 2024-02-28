@@ -17,7 +17,7 @@ function AboutMe() {
     });
 
     return (
-        <Section>
+        <Section id='about-me' className={'pt-0'}>
             <div className='flex flex-col gap-12 lg:flex-row items-center'>
                 <div ref={ref1} className={`flex flex-col lg:w-3/5 ${transitionClasses1}`}>
                     <SectionTitle title='About Me' />
@@ -39,7 +39,7 @@ function AboutMe() {
                         <HiCommandLine className='absolute                      left-0                      size-8                                          xsm:size-10                                 sm:size-12' />
                         <FaHtml5 className='absolute                            bottom-20 left-20           size-8      xsm:bottom-24 xsm:left-24           xsm:size-10     sm:bottom-28 sm:left-28     sm:size-12' />
                         <TbSql className='absolute                              bottom-[4.8rem] right-20    size-12     xsm:bottom-[5.8rem] xsm:right-24    xsm:size-14     sm:bottom-28 sm:right-28    sm:size-16' />
-                        <BiLogoGraphql className='absolute              bottom-16 right-4           size-8      xsm:bottom-20 xsm:right-6           xsm:size-10                                 sm:size-12' />
+                        <BiLogoGraphql className='absolute                      bottom-16 right-4           size-8      xsm:bottom-20 xsm:right-6           xsm:size-10                                 sm:size-12' />
                         <BiLogoTypescript className='absolute                   bottom-16 left-4            size-8      xsm:bottom-20 xsm:left-6            xsm:size-10                                 sm:size-12' />
                         <FaDocker className='absolute                           bottom-12                   size-6      xsm:bottom-14                       xsm:size-8      sm:bottom-16                sm:size-10' />
                         <SiGooglecloud className='absolute                      bottom-4 right-2/3          size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />

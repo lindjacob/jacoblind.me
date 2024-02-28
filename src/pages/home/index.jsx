@@ -1,6 +1,6 @@
 import Page from '../../components/layout/Page';
 import Hero from './Hero';
-import PreviousPartners from './PreviousPartners';
+import PreviousPartners from './RecentClients';
 import AboutMe from './AboutMe';
 import FeaturedProjects from './FeaturedProjects';
 

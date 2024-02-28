@@ -8,25 +8,6 @@ import IconBox from '../../../components/ui/IconBox';
 import ProjectInfo from './ProjectInfo';
 import ProjectDescription from './ProjectDescription';
 import ScrollButton from '../../../components/ui/ScrollButton';
-import { BiLogoTypescript } from 'react-icons/bi';
-import { TbBrandGoogleBigQuery, TbSql } from 'react-icons/tb';
-import { RiJavascriptFill } from 'react-icons/ri';
-import { FaReact, FaPython, FaDocker } from 'react-icons/fa';
-import { SiTailwindcss, SiDjango, SiGooglecloud, SiNextdotjs } from 'react-icons/si';
-
-const iconComponents = {
-  javascript: RiJavascriptFill,
-  react: FaReact,
-  tailwind: SiTailwindcss,
-  typescript: BiLogoTypescript,
-  bigquery: TbBrandGoogleBigQuery,
-  sql: TbSql,
-  python: FaPython,
-  next: SiNextdotjs,
-  docker: FaDocker,
-  django: SiDjango,
-  gcloud: SiGooglecloud
-};
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -62,7 +43,7 @@ const ProjectPage = () => {
             <ProjectInfo content='technologies' project={project}>
               <div className='flex flex-wrap gap-2 mt-1'>
                 {project.technologies.map(tech => (
-                  <IconBox IconComponent={iconComponents[tech]} />
+                  <IconBox icon={tech} />
                 ))}
               </div>
             </ProjectInfo>

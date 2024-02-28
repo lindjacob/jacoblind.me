@@ -26,7 +26,7 @@ export default function ArrowLink({ link, anchorText, blankLinkTarget, size, par
         <div className={`w-fit ${className}`}>
             <a href={link} className='group cursor-pointer' target={blankLinkTarget && '_blank'}>
                 <div className='flex'>
-                    <p className={`${textSize}`}>{anchorText}</p>
+                    <div className={`${textSize}`}>{anchorText}</div>
                     <svg className={`${svgSize} ml-2 ${parentGroup ? 'group-hover/parent:translate-x-2' : 'group-hover:translate-x-2'} transition-transform duration-300`} aria-hidden='true' xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 14 10'>
                         <path stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M1 5h12m0 0L9 1m4 4L9 9' />
                     </svg>
