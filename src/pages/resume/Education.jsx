@@ -27,7 +27,7 @@ export default function Education() {
                 </p>
                 <p className='mt-2'>
                     Supervisor: Peyman Afshani <br />
-                    Grade: B+
+                    Grade: B/B+
                 </p>
                 <a href='' className='button secondary small mt-4'>
                     <PiDownloadSimple size='1.2rem' />

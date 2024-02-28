@@ -2,8 +2,6 @@ import Section from '../../components/layout/Section';
 
 const Page = () => {
     return (
-        // BG image
-        // bg-[url('src/assets/heroImage.svg')] bg-no-repeat bg-hero-bg-pos
         <Section className={`h-[70lvh]`}>
             <div className='flex flex-col md:flex-row'>
                 <div className='w-full text-center flex flex-col'>

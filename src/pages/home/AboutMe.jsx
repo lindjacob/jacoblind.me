@@ -4,16 +4,22 @@ import SectionTitle from '../../components/ui/SectionTitle';
 import ArrowLink from '../../components/ui/ArrowLink';
 import { BiLogoTypescript, BiLogoGraphql } from 'react-icons/bi';
 import { HiCommandLine } from 'react-icons/hi2';
-import { TbBrandGoogleBigQuery, TbSql } from 'react-icons/tb';
+import { TbSql } from 'react-icons/tb';
 import { RiJavascriptFill } from 'react-icons/ri';
 import { FaGitAlt, FaReact, FaPython, FaDocker, FaJava, FaHtml5, FaCss3Alt } from 'react-icons/fa';
 import { SiTailwindcss, SiDjango, SiGooglecloud, SiNextdotjs } from 'react-icons/si';
+import useInViewTransition from '../../hooks/useInViewTransition';
 
 function AboutMe() {
+    const { ref: ref1, transitionClasses: transitionClasses1 } = useInViewTransition();
+    const { ref: ref2, transitionClasses: transitionClasses2 } = useInViewTransition({
+        delay: 'delay-300'
+    });
+
     return (
         <Section>
             <div className='flex flex-col gap-12 lg:flex-row items-center'>
-                <div className='flex flex-col lg:w-3/5'>
+                <div ref={ref1} className={`flex flex-col lg:w-3/5 ${transitionClasses1}`}>
                     <SectionTitle title='About Me' />
                     <h2>Blending Technical Excellence with Entrepreneurial Spirit</h2>
                     <p>
@@ -21,7 +27,7 @@ function AboutMe() {
                     </p>
                     <ArrowLink link='/resume' anchorText='My Resume' size='xl' className='mt-8' />
                 </div>
-                <div className='flex flex-col items-center lg:w-2/5'>
+                <div ref={ref2} className={`flex flex-col items-center lg:w-2/5 ${transitionClasses2}`}>
                     <div className='flex justify-center items-center rounded-full bg-gray-800 relative mx-auto w-64 h-64 xsm:w-80 xsm:h-80 sm:h-96 sm:w-96'>
                         <RiJavascriptFill className='absolute                   top-0                       size-12                                         xsm:size-16                                 sm:size-20' />
                         <FaReact className='absolute                            top-7 right-9               size-10     xsm:top-9 xsm:right-10              xsm:size-14     sm:top-10 sm:right-14       sm:size-16 ' />

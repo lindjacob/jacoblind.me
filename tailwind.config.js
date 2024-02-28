@@ -29,8 +29,5 @@ export default {
       backgroundColor: ['odd', 'even'],
     },
   },
-  plugins: [
-    require('flowbite/plugin')
-  ],
   darkMode: 'class'
 }
