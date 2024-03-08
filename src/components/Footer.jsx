@@ -1,4 +1,3 @@
-import profilePhoto from '../assets/profilePhoto.png';
 import ArrowLink from './ui/ArrowLink';
 import Container from './layout/Container';
 import SocialBar from './ui/SocialBar';
@@ -16,7 +15,7 @@ const Footer = () => {
                 <div className='lg:h-96 h-[32rem] flex flex-col justify-center lg:flex-row lg:justify-between lg:items-center'>
                     <div className={`flex flex-col ${transitionClasses1}`} ref={ref1}>
                         <div className='flex'>
-                            <img src={profilePhoto} className='rounded-full size-24 sm:h-32 sm:w-32 object-cover' />
+                            <img src={`/profilePhoto.png`} className='rounded-full size-24 sm:h-32 sm:w-32 object-cover' />
                             <div className='ml-4 md:ml-8 my-auto'>
                                 <p className='text-4xl font-semibold opacity-100'>Jacob Lind</p>
                                 <p className='text-xl text-gray-300 font-medium'>Full Stack Developer</p>
