@@ -13,7 +13,7 @@ export default function PartnersLogoBar() {
     ];
 
     return (
-        <div className='flex flex-wrap mt-6 gap-10 justify-center items-center'>
+        <div className='flex flex-wrap mt-6 gap-6 sm:gap-10 justify-center items-center'>
             {logos.map((logo, index) => {
                 const { ref, transitionClasses } = useInViewTransition({ delay: logo.delay });
                 return (

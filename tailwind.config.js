@@ -20,6 +20,7 @@ export default {
         'hero-bg-pos': 'right 5rem bottom -5rem',
       },
       screens: {
+        '2xsm': '380px',
         'xsm': '440px',
       },
     },

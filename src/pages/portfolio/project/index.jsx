@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import projectData from './projectData.json';
+import projectsData from './projectsData.json';
 import Page from '../../../components/layout/Page';
 import Section from '../../../components/layout/Section';
 import NotFound from '../../NotFound';
@@ -11,7 +11,7 @@ import ScrollButton from '../../../components/ui/ScrollButton';
 
 const ProjectPage = () => {
   const { projectId } = useParams();
-  const project = projectData.find(p => p.id === projectId);
+  const project = projectsData.find(p => p.id === projectId);
 
   if (!project) {
     return <NotFound />;
@@ -33,7 +33,7 @@ const ProjectPage = () => {
       </Section>
       <Section id='about'>
         <div className='relative w-full flex flex-col md:flex-row md:gap-16 lg:gap-40'>
-          <div className='mb-10 grid grid-cols-2 gap-5 md:flex md:h-fit md:flex-col md:justify-start md:min-w-56 md:sticky md:top-10'>
+          <div className='mb-10 flex flex-col gap-5 xsm:grid xsm:grid-cols-2 xsm:gap-5 md:flex md:h-fit md:flex-col md:justify-start md:min-w-56 md:sticky md:top-10'>
             <ProjectInfo content='client' project={project}>
               <p className='opacity-100 font-semibold text-xl md:text-2xl'>{project.client}</p>
             </ProjectInfo>
@@ -54,7 +54,7 @@ const ProjectPage = () => {
               <ArrowLink link={project.website} anchorText='Live preview' blankLinkTarget={true} size={'xl'} />
             </ProjectInfo>
           </div>
-          <div>
+          <div id='projectDescription'>
             <ProjectDescription title='About the project' content='about' project={project} />
             <ProjectDescription title='Project goal' content='goal' project={project} />
             <ProjectDescription title='Project result' content='result' project={project} />

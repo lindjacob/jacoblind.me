@@ -3,12 +3,12 @@ import PartnersLogoBar from '../../components/ui/PartnersLogoBar';
 import useInViewTransition from '../../hooks/useInViewTransition';
 
 function PreviousPartners() {
-    const { ref: ref, transitionClasses: transitionClasses } = useInViewTransition();
+    const { ref: ref1, transitionClasses: transitionClasses1 } = useInViewTransition();
 
     return (
-        <Section className={`justify-center h-[1lvh]`}>
+        <Section className={`justify-center dark:py-20 z-20 relative`}>
             <div className='flex flex-col items-center'>
-                <h2 className={`mt-0 text-2xl uppercase text-center ${transitionClasses}`} ref={ref}>Recently worked with</h2>
+                <h2 className={`mb-4 mt-0 text-2xl uppercase text-center ${transitionClasses1}`} ref={ref1}>Recently worked with</h2>
                 <PartnersLogoBar />
             </div>
         </Section>

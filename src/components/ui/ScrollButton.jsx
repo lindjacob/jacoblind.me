@@ -15,9 +15,9 @@ export default function ScrollButton({ href, scrollBehavior = 'smooth', offset =
   return (
     <a
       href={href}
-      className={`bg-blue-primary size-20 rounded-full flex justify-center items-center scroll-smooth hover:scale-90 transition-all duration-300`}
+      className={`bg-blue-primary size-16 lg:size-20 rounded-full flex justify-center items-center scroll-smooth hover:scale-90 transition-all duration-300`}
       onClick={handleClick}>
-      <IoIosArrowDown size='3rem' className='animate-bounce' />
+          <IoIosArrowDown className='size-10 lg:size-12 animate-bounce' />
     </a>
   );
 }

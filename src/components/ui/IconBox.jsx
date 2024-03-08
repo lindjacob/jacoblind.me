@@ -25,9 +25,9 @@ export default function IconBox({ icon }) {
   const tooltip = Object.keys(icons).find(key => icons[key] === IconComponent) || "Unknown";
 
   return (
-    <div className='group size-12 relative'>
+    <div className='group/iconbox size-12 relative'>
       <IconComponent size='3em' className='bg-slate-600 rounded-md p-2' />
-      <span className='opacity-0 group-hover:opacity-100 bg-black-primary text-center border-[2px] border-white rounded-lg px-2 py-1 relative z-10 -top-[5em] transition-opacity duration-300 capitalize'>{tooltip}</span>
+      <span className='opacity-0 group-hover/iconbox:opacity-100 bg-black-primary text-center border-[2px] border-white rounded-lg px-2 py-1 relative z-10 -top-[5em] transition-all duration-300 capitalize'>{tooltip}</span>
     </div>
   );
 }

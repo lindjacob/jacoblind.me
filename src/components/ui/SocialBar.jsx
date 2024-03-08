@@ -1,25 +1,43 @@
-import { RiInstagramFill, RiFacebookCircleFill, RiWhatsappFill, RiLinkedinBoxFill, RiGithubFill  } from "react-icons/ri";
-
-const iconClasses = 'w-9 h-9 dark:fill-gray-200 group-hover:fill-gray-500 dark:hover:fill-white hover:-translate-y-2 transition-all duration-300'
+import { useState } from 'react';
+import { RiInstagramFill, RiFacebookCircleFill, RiWhatsappFill, RiLinkedinBoxFill, RiGithubFill } from "react-icons/ri";
 
 export default function SocialBar() {
+    const [hoveredIndex, setHoveredIndex] = useState(null);
+    const socials = [
+        {
+            IconComponent: RiInstagramFill,
+            href: 'https://www.instagram.com/jacobhlind/'
+        },
+        {
+            IconComponent: RiFacebookCircleFill,
+            href: 'https://www.facebook.com/jacob.lind1'
+        },
+        {
+            IconComponent: RiWhatsappFill,
+            href: 'https://wa.me/004521221945'
+        },
+        {
+            IconComponent: RiLinkedinBoxFill,
+            href: 'https://www.linkedin.com/in/jacoblindseo/'
+        },
+        {
+            IconComponent: RiGithubFill,
+            href: 'https://github.com/lindjacob'
+        }
+    ]
+
     return (
         <div className='flex mt-6 group gap-6'>
-            <a href='https://www.facebook.com/jacob.lind1' target='_blank' className='cursor-pointer'>
-                <RiFacebookCircleFill className={iconClasses} />
-            </a>
-            <a href='https://www.instagram.com/jacobhlind/' target='_blank' className='cursor-pointer'>
-                <RiInstagramFill className={iconClasses} />
-            </a>
-            <a href='https://wa.me/004521221945' rel='nofollow' target='_blank' className='cursor-pointer'>
-                <RiWhatsappFill className={iconClasses} />
-            </a>
-            <a href='https://www.linkedin.com/in/jacoblindseo/' target='_blank' className='cursor-pointer'>
-                <RiLinkedinBoxFill className={iconClasses} />
-            </a>
-            <a href='https://github.com/lindjacob' target='_blank' className='cursor-pointer'>
-                <RiGithubFill className={iconClasses} />
-            </a>
+            {socials.map((social, index) => (
+                <a href={social.href}
+                    target='_blank'
+                    className={`cursor-pointer transition-all duration-300 ${hoveredIndex === null ? '' : hoveredIndex !== index ? 'opacity-50' : 'scale-[1.15] -translate-y-2'}`}
+                    key={index}
+                    onMouseEnter={() => setHoveredIndex(index)}
+                    onMouseLeave={() => setHoveredIndex(null)}>
+                    <social.IconComponent size='36px' />
+                </a>
+            ))}
         </div>
     )
 }

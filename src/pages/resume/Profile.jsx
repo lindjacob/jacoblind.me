@@ -9,8 +9,10 @@ export default function Profile() {
             <IconBox IconComponent={PiUserList} />
             <h2>Professional profile</h2>
             <p>
-                Accomplished Senior Data Scientist & Business Consultant with a proven track record of leveraging advanced analytics to drive strategic decision-making and optimize business processes.
-                Demonstrated expertise in developing innovative solutions to complex problems, coupled with exceptional communication skills to effectively convey insights to stakeholders at all levels.
+                From entrepreneurship to leading technical projects at DEKRA, I've consistently delivered impactful results.
+                My career is a unique blend of marketing and business insight, coupled with two decades of passion-driven development and a formal education in Computer Science.
+                As an extrovert, I seamlessly communicate complex technical and business concepts to diverse audiences, driving collaboration and innovation.
+                I have an insatiable hunger to learn and I am highly motivated by tasks that require me to be innovative, where I can use my creativity and my intuition.
             </p>
             <Location locationText={`Based in Aarhus, Denmark.`} />
         </Container>

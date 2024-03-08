@@ -17,36 +17,40 @@ function AboutMe() {
     });
 
     return (
-        <Section id='about-me' className={'pt-0'}>
+        <Section id='about-me' className={`relative z-20`}>
             <div className='flex flex-col gap-12 lg:flex-row items-center'>
-                <div ref={ref1} className={`flex flex-col lg:w-3/5 ${transitionClasses1}`}>
+                <div ref={ref1} className={`flex flex-col lg:w-1/2 ${transitionClasses1}`}>
                     <SectionTitle title='About Me' />
-                    <h2>Blending Technical Excellence with Entrepreneurial Spirit</h2>
+                    <h2>Expertise in Digital Product Innovation</h2>
                     <p>
-                        I'm a full stack developer who thrives at the intersection of coding, business, and problem-solving. With a journey that took me from a hobbyist coder at 14 to an entrepreneurial tech expert, I've transformed challenges into opportunities and ideas into reality. My career is a testament to my passion for development and my commitment to excellence in every project. Leveraging my unique blend of technical skills and real-world experience, I always aim to create solutions that not only meet but exceed expectations.
+                        I started coding at the age of 14 and founded my first succesful company with employees at the age of 26.
+                        My experiences make me uniquely qualified for digital product innovation and developement as well as project management.
+                        My aim is always to create solutions that not only meet but exceed expectations.
                     </p>
                     <ArrowLink link='/resume' anchorText='My Resume' size='xl' className='mt-8' />
                 </div>
-                <div ref={ref2} className={`flex flex-col items-center lg:w-2/5 ${transitionClasses2}`}>
-                    <div className='flex justify-center items-center rounded-full bg-gray-800 relative mx-auto w-64 h-64 xsm:w-80 xsm:h-80 sm:h-96 sm:w-96'>
-                        <RiJavascriptFill className='absolute                   top-0                       size-12                                         xsm:size-16                                 sm:size-20' />
-                        <FaReact className='absolute                            top-7 right-9               size-10     xsm:top-9 xsm:right-10              xsm:size-14     sm:top-10 sm:right-14       sm:size-16 ' />
-                        <SiNextdotjs className='absolute                        top-7 left-9                size-10     xsm:top-9 xsm:left-10               xsm:size-14     sm:top-10 sm:left-14        sm:size-16' />
-                        <SiTailwindcss className='absolute                      top-16                      size-12     xsm:top-[5.5rem]                    xsm:size-14     sm:top-28                   sm:size-16' />
-                        <FaCss3Alt className='absolute                          top-[5.7rem] right-12       size-10     xsm:top-28 xsm:right-14             xsm:size-14     sm:top-32                   sm:size-16' />
-                        <FaGitAlt className='absolute                           top-[5.5rem] left-12        size-10     xsm:top-[6.8rem] xsm:left-14        xsm:size-14     sm:top-[7.9rem]             sm:size-16' />
-                        <FaPython className='absolute                           right-0                     size-8                                          xsm:size-10                                 sm:size-12' />
-                        <HiCommandLine className='absolute                      left-0                      size-8                                          xsm:size-10                                 sm:size-12' />
-                        <FaHtml5 className='absolute                            bottom-20 left-20           size-8      xsm:bottom-24 xsm:left-24           xsm:size-10     sm:bottom-28 sm:left-28     sm:size-12' />
-                        <TbSql className='absolute                              bottom-[4.8rem] right-20    size-12     xsm:bottom-[5.8rem] xsm:right-24    xsm:size-14     sm:bottom-28 sm:right-28    sm:size-16' />
-                        <BiLogoGraphql className='absolute                      bottom-16 right-4           size-8      xsm:bottom-20 xsm:right-6           xsm:size-10                                 sm:size-12' />
-                        <BiLogoTypescript className='absolute                   bottom-16 left-4            size-8      xsm:bottom-20 xsm:left-6            xsm:size-10                                 sm:size-12' />
-                        <FaDocker className='absolute                           bottom-12                   size-6      xsm:bottom-14                       xsm:size-8      sm:bottom-16                sm:size-10' />
-                        <SiGooglecloud className='absolute                      bottom-4 right-2/3          size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />
-                        <SiDjango className='absolute                           bottom-4 left-2/3           size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />
-                        <FaJava className='absolute                             bottom-0                    size-6                                          xsm:size-8                                  sm:size-10' />
+                <div ref={ref2} className={`flex flex-col items-center lg:items-end lg:w-1/2 ${transitionClasses2}`}>
+                    <div>
+                        <div className='flex justify-center items-center rounded-full bg-gray-800 relative mx-auto w-64 h-64 xsm:w-80 xsm:h-80 sm:h-96 sm:w-96'>
+                            <RiJavascriptFill className='absolute                   top-0                       size-12                                         xsm:size-16                                 sm:size-20' />
+                            <FaReact className='absolute                            top-7 right-9               size-10     xsm:top-9 xsm:right-10              xsm:size-14     sm:top-10 sm:right-14       sm:size-16 ' />
+                            <SiNextdotjs className='absolute                        top-7 left-9                size-10     xsm:top-9 xsm:left-10               xsm:size-14     sm:top-10 sm:left-14        sm:size-16' />
+                            <SiTailwindcss className='absolute                      top-16                      size-12     xsm:top-[5.5rem]                    xsm:size-14     sm:top-28                   sm:size-16' />
+                            <FaCss3Alt className='absolute                          top-[5.7rem] right-12       size-10     xsm:top-28 xsm:right-14             xsm:size-14     sm:top-32                   sm:size-16' />
+                            <FaGitAlt className='absolute                           top-[5.5rem] left-12        size-10     xsm:top-[6.8rem] xsm:left-14        xsm:size-14     sm:top-[7.9rem]             sm:size-16' />
+                            <FaPython className='absolute                           right-0                     size-8                                          xsm:size-10                                 sm:size-12' />
+                            <HiCommandLine className='absolute                      left-0                      size-8                                          xsm:size-10                                 sm:size-12' />
+                            <FaHtml5 className='absolute                            bottom-20 left-20           size-8      xsm:bottom-24 xsm:left-24           xsm:size-10     sm:bottom-28 sm:left-28     sm:size-12' />
+                            <TbSql className='absolute                              bottom-[4.8rem] right-20    size-12     xsm:bottom-[5.8rem] xsm:right-24    xsm:size-14     sm:bottom-28 sm:right-28    sm:size-16' />
+                            <BiLogoGraphql className='absolute                      bottom-16 right-4           size-8      xsm:bottom-20 xsm:right-6           xsm:size-10                                 sm:size-12' />
+                            <BiLogoTypescript className='absolute                   bottom-16 left-4            size-8      xsm:bottom-20 xsm:left-6            xsm:size-10                                 sm:size-12' />
+                            <FaDocker className='absolute                           bottom-12                   size-6      xsm:bottom-14                       xsm:size-8      sm:bottom-16                sm:size-10' />
+                            <SiGooglecloud className='absolute                      bottom-4 right-2/3          size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />
+                            <SiDjango className='absolute                           bottom-4 left-2/3           size-6      xsm:bottom-6                        xsm:size-8                                  sm:size-10' />
+                            <FaJava className='absolute                             bottom-0                    size-6                                          xsm:size-8                                  sm:size-10' />
+                        </div>
+                        <p className='mt-4 text-center'>Some tools I am familiar with</p>
                     </div>
-                    <p className='mt-4'>Some tools I am familiar with</p>
                 </div>
             </div>
         </Section>

@@ -1,12 +1,13 @@
 import Page from '../../components/layout/Page';
 import Section from '../../components/layout/Section';
-import ProjectCard from '../../components/ProjectCard';
-import simpleFinancePlannerImg from '../../assets/simple-finance-planner.png'
+import ProjectCardWrapper from '../../components/ui/ProjectCardWrapper';
 import useInViewTransition from '../../hooks/useInViewTransition';
+import projectsData from './project/projectsData.json';
 
 export default function index() {
     const { ref: ref1, transitionClasses: transitionClasses1 } = useInViewTransition();
     const { ref: ref2, transitionClasses: transitionClasses2 } = useInViewTransition({
+        threshold: 0,
         delay: 'delay-300'
     });
 
@@ -17,15 +18,8 @@ export default function index() {
                     <h1>Portfolio</h1>
                     <p className='subheading text-center'>Here you find a list of projects I have built for fun to showcase some of my abilities. <br /> All project are have links to their GitHub repo.</p>
                 </div>
-                <div className={`group/portfolios mt-20 flex flex-col sm:flex-row sm:flex-wrap gap-5 ${transitionClasses2}`} ref={ref2}>
-                    <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                    <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                    <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                    <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                    <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                    <div className='w-full min-h-[580px] sm:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.333%-1rem)] flex items-center justify-center rounded-3xl transition-all duration-300 group-hover/portfolios:opacity-50 dark:hover:opacity-100 border-4 border-dashed border-gray-800'>
-                        <p className='text-xl'>More projects coming</p>
-                    </div>
+                <div className={`mt-20 ${transitionClasses2}`} ref={ref2}>
+                    <ProjectCardWrapper projects={projectsData} moreComing={true} />
                 </div>
             </Section>
         </Page>

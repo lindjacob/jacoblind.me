@@ -7,7 +7,7 @@
         @apply bg-black-primary font-primary caret-transparent scroll-smooth text-white;
     }
     h1 {
-        @apply mb-5 text-6xl sm:leading-[4.5rem] font-semibold tracking-tight md:text-7xl md:leading-[5.4rem] lg:text-8xl lg:leading-[7rem];
+        @apply mb-5 text-[58px] leading-[4.5rem] sm:text-[56px] sm:leading-[4.5rem] font-semibold tracking-tight md:text-[68px] md:leading-[5.4rem] lg:text-[90px] lg:leading-[7rem];
     }
     h2 {
         @apply mb-4 text-4xl leading-[3rem] md:text-5xl md:leading-[3.6rem] md:mt-10 md:mb-5 font-semibold
@@ -33,6 +33,10 @@
     }
     #resume p {
         @apply text-sm;
+    }
+
+    #projectDescription h2 {
+        @apply md:text-4xl
     }
 
     .subheading {

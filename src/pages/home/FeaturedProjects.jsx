@@ -2,13 +2,14 @@ import React from 'react';
 import Section from '../../components/layout/Section';
 import SectionTitle from '../../components/ui/SectionTitle';
 import ArrowLink from '../../components/ui/ArrowLink';
-import ProjectCard from '../../components/ProjectCard';
-import simpleFinancePlannerImg from '../../assets/simple-finance-planner.png';
+import ProjectCardWrapper from '../../components/ui/ProjectCardWrapper';
+import projectsData from '../portfolio/project/projectsData.json';
 import useInViewTransition from '../../hooks/useInViewTransition';
 
 export default function FeaturedProjects() {
     const { ref: ref1, transitionClasses: transitionClasses1 } = useInViewTransition();
     const { ref: ref2, transitionClasses: transitionClasses2 } = useInViewTransition({
+        offViewClasses: `opacity-100 sm:opacity-0 translate-y-4`,
         inViewClasses: `opacity-100 translate-y-0 delay-300`
     });
 
@@ -27,10 +28,8 @@ export default function FeaturedProjects() {
                     </div>
                 </div>
             </div>
-            <div ref={ref2} className={`group/portfolios flex flex-col sm:flex-row sm:flex-wrap gap-5 ${transitionClasses2}`}>
-                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
-                <ProjectCard link='/portfolio/simple-finance-planner' title={'Simple Finance Planner'} description={'A continous project where I build the tool I always needed to predict my finances'} img={simpleFinancePlannerImg} icons={['react', 'tailwindcss']} />
+            <div ref={ref2} className={`group/projects ${transitionClasses2}`}>
+                <ProjectCardWrapper projects={projectsData.slice(0, 3)} moreComing={true} />
             </div>
         </Section>
     )
