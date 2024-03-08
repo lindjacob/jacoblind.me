@@ -3,7 +3,7 @@ import Section from '../../components/layout/Section';
 import SectionTitle from '../../components/ui/SectionTitle';
 import ArrowLink from '../../components/ui/ArrowLink';
 import ProjectCardWrapper from '../../components/ui/ProjectCardWrapper';
-import projectsData from '../portfolio/project/projectsData.json';
+import projectsData from '../../projectsData.json';
 import useInViewTransition from '../../hooks/useInViewTransition';
 
 export default function FeaturedProjects() {

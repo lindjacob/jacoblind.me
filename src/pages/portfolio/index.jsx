@@ -2,7 +2,7 @@ import Page from '../../components/layout/Page';
 import Section from '../../components/layout/Section';
 import ProjectCardWrapper from '../../components/ui/ProjectCardWrapper';
 import useInViewTransition from '../../hooks/useInViewTransition';
-import projectsData from './project/projectsData.json';
+import projectsData from '../../projectsData.json';
 
 export default function index() {
     const { ref: ref1, transitionClasses: transitionClasses1 } = useInViewTransition();

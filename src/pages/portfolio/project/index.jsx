@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import projectsData from './projectsData.json';
+import projectsData from '../../../projectsData.json';
 import Page from '../../../components/layout/Page';
 import Section from '../../../components/layout/Section';
 import NotFound from '../../NotFound';
