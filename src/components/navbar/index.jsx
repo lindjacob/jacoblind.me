@@ -45,7 +45,7 @@ const Navbar = () => {
                     </div>
                 </Container>
             </nav>
-            <div id='menuOverlay' className={`${menuOpen ? 'translate-x-0' : '-translate-x-full'} fixed inset-x-0 z-10 h-screen bg-black-primary md:hidden transform transition-all ease-out duration-300`}>
+            <div id='menuOverlay' className={`${menuOpen ? 'translate-x-0' : '-translate-x-full'} fixed inset-x-0 z-50 h-screen bg-black-primary md:hidden transform transition-all ease-out duration-300`}>
                 <ul className='p-8'>
                     <LinkList />
                 </ul>
