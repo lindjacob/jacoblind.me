@@ -29,7 +29,7 @@ export default function Education() {
                     Supervisor: Peyman Afshani <br />
                     Grade: B/B+
                 </p>
-                <a href='' className='button secondary small mt-4'>
+                <a href='/Exploring_Closest_Points_Algorithms.pdf' className='button secondary small mt-4' download>
                     <PiDownloadSimple size='1.2rem' />
                     Download paper
                 </a>
