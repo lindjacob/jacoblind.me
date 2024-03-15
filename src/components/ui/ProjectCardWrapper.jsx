@@ -5,7 +5,7 @@ const ProjectCardWrapper = ({ projects, moreComing }) => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className={`flex flex-col sm:flex-row sm:flex-wrap gap-5`}>
+        <div className={`flex flex-col sm:flex-row sm:flex-wrap gap-5 items-stretch`}>
             {projects.map((project, index) => (
                 <div
                     key={index}

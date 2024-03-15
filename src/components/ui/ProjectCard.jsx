@@ -5,10 +5,10 @@ import IconBox from './IconBox';
 export default function projectCard({ projectObject }) {
     return (
         <a href={`/portfolio/${projectObject.id}`}
-            className={`group/parent flex flex-col bg-gray-800 rounded-3xl overflow-clip`}
+            className={`h-full group/parent flex flex-col bg-gray-800 rounded-3xl overflow-clip`}
         >
-            <div className='h-3/4 box-border overflow-hidden'>
-                <img src={projectObject.featuredImage} className='group-hover/parent:scale-110 transition-all duration-300' />
+            <div className='overflow-clip'>
+                <img src={projectObject.featuredImage} className='group-hover/parent:scale-110 transition-all duration-300 object-cover w-full h-full' />
             </div>
             <div className='p-8 lg:p-10'>
                 <div className='flex gap-4 self-end'>

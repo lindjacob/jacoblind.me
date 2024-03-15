@@ -3,7 +3,7 @@
         "id": "simple-finance-planner",
         "title": "Simple Finance Planner",
         "subheading": "Get an understanding for your income allocation's effect on your future finances.",
-        "featuredImage": "/simple-finance-planner.png",
+        "featuredImage": "/simple-finance-planner.webp",
         "client": "",
         "services": "",
         "technologies": [
@@ -18,5 +18,24 @@
         "result": "",
         "future": "In the future it will be possible to add monetary goals, so a user can plan for bigger purchases such as a car. The idea is to show what such a purchase costs, not only in todays money, but what it will cost the user in the future, if the money is taken away from i.e. the investment account.",
         "collaborations": "The designs for this project were done by Caterina Pomari."
+    },
+    {
+        "id": "jamming",
+        "title": "Jamming",
+        "subheading": "Build a new playlist and add it to your Spotify account",
+        "featuredImage": "/jamming.webp",
+        "client": "",
+        "services": "",
+        "technologies": [
+            "javascript",
+            "react"
+        ],
+        "website": "https://jamming.jacoblind.me/",
+        "github": "https://github.com/lindjacob/jamming",
+        "about": "This is one of my first React projects from 2019. The idea was to showcase some of my skills working with APIs.",
+        "goal": "This is an example of how I work with APIs and the old class structure in React.",
+        "result": "",
+        "future": "",
+        "collaborations": ""
     }
 ]
