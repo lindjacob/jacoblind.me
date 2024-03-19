@@ -29,7 +29,7 @@ const ProjectPage = () => {
             <ScrollButton href='#about' />
           </div>
         </div>
-        <img src={project.featuredImage} className='py-10' />
+        <img src={project.featuredImage} className='mt-10 rounded-xl' />
       </Section>
       <Section id='about'>
         <div className='relative w-full flex flex-col md:flex-row md:gap-16 lg:gap-40'>

@@ -23,6 +23,9 @@ export default {
         '2xsm': '380px',
         'xsm': '440px',
       },
+      boxShadow: {
+        'all': '0 0 10px 10px rgba(0, 0, 0, 0.3)',
+      }
     },
   },
   variants: {

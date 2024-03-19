@@ -32,7 +32,7 @@ export default function index() {
                 </div>
                 <div id='resume' className='mt-24 flex flex-col gap-4'>
                     <div className='flex flex-col md:flex-row gap-4'>
-                        <Container className={`w-full min-h-[350px] md:min-h-0 md:w-1/3 bg-[url('/profilePhoto.png')] bg-cover bg-center`} />
+                        <Container className={`w-full min-h-[350px] md:min-h-0 md:w-1/3 bg-[url('/profilePhoto.webp')] bg-cover bg-center`} />
                         <Profile />
                     </div>
                     <WorkedWith />
@@ -45,7 +45,7 @@ export default function index() {
                     {/* <Recommendations /> */}
                 </div>
                 <div className={`flex flex-col items-center my-20 ${transitionClasses2}`} ref={ref2}>
-                    <img src={`/profilePhoto.png`} className='size-20 object-cover rounded-xl mb-4' />
+                    <img src={`/profilePhoto.webp`} className='size-20 object-cover rounded-xl mb-4' />
                     <h3>Feel Free to Reach Out</h3>
                     <p>Let's start a productive converstaion</p>
                     <CtaButtons />

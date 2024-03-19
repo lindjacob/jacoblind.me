@@ -20,6 +20,26 @@
         "collaborations": "The designs for this project were done by Caterina Pomari."
     },
     {
+        "id": "profilePage",
+        "title": "Profile Page",
+        "subheading": "See how this page is build and hear my own thoughts behind it.",
+        "featuredImage": "/profilePage.webp",
+        "client": "",
+        "services": "",
+        "technologies": [
+            "javascript",
+            "react",
+            "tailwindcss"
+        ],
+        "website": "https://jacoblind.me/",
+        "github": "https://github.com/lindjacob/jacoblind.me",
+        "about": "This site represents my personal stage from where you will always be able to see my latest achievements and personal projects. As a developer I thought my skills would be best presented using those exacts skills to create their own digital display and thereby allowing the code to talk for itself.",
+        "goal": "",
+        "result": "",
+        "future": "This is a project under continuous developement. As I keep playing and learning more, this site will continue growing and displaying my latest professional advances",
+        "collaborations": ""
+    },
+    {
         "id": "jamming",
         "title": "Jamming",
         "subheading": "Build a new playlist and add it to your Spotify account.",

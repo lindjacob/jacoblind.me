@@ -19,7 +19,7 @@ export default function FeaturedProjects() {
                 <div className='flex flex-col lg:w-2/3'>
                     <SectionTitle title='My Portfolio' />
                     <h2>
-                        Take a look at the latest projects I've done
+                        Take a look at the latest side projects I've done
                     </h2>
                 </div>
                 <div className='flex lg:w-1/3 lg:flex-row-reverse'>
@@ -29,7 +29,7 @@ export default function FeaturedProjects() {
                 </div>
             </div>
             <div ref={ref2} className={`group/projects ${transitionClasses2}`}>
-                <ProjectCardWrapper projects={projectsData.slice(0, 3)} moreComing={true} />
+                <ProjectCardWrapper projects={projectsData.slice(0, 3)} />
             </div>
         </Section>
     )
