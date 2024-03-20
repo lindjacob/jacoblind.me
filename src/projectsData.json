@@ -1,9 +1,9 @@
 [
     {
-        "id": "simple-finance-planner",
-        "title": "Simple Finance Planner",
+        "id": "simply-finance",
+        "title": "Simply Finance",
         "subheading": "Get an understanding for your income allocation's effect on your future finances.",
-        "featuredImage": "/simple-finance-planner.webp",
+        "featuredImage": "/simply-finance.webp",
         "client": "",
         "services": "",
         "technologies": [
@@ -11,8 +11,8 @@
             "react",
             "tailwindcss"
         ],
-        "website": "https://simplefinanceplanner.jacoblind.me/",
-        "github": "https://github.com/lindjacob/finance-controller",
+        "website": "https://simplyfinance.jacoblind.me/",
+        "github": "https://github.com/lindjacob/simply-finance",
         "about": "This project was inspired by my own need to better predict my future financial situation and after many attempts to teach my girlfriend how I think about money, I decided to pivot the project to be more educational. My approach is a visual and interactive type of app, where the user adjusts a colorful bar that represents your monthly income. Below are two graphs representing real time calculations of these two accounts future outlook. When the user adjusts the income allocation, a new graph is created which diverges from the old to show the consequences of the changes.",
         "goal": "The goal is to give a visual understanding for budgeting and teach the user how to financially plan for the future.",
         "result": "",
