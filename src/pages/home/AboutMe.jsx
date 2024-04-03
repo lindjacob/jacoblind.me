@@ -24,7 +24,7 @@ function AboutMe() {
                     <h2>Expertise in Digital Product Innovation</h2>
                     <p>
                         I started coding at the age of 14 and founded my first succesful company with employees at the age of 26.
-                        My experiences make me uniquely qualified for digital product innovation and developement as well as project management.
+                        My experiences make me uniquely qualified for digital product innovation and development as well as project management.
                         My aim is always to create solutions that not only meet but exceed expectations.
                     </p>
                     <ArrowLink link='/resume' anchorText='My Resume' size='xl' className='mt-8' />

@@ -16,7 +16,7 @@ export default function index() {
             <Section>
                 <div className={`flex flex-col items-center ${transitionClasses1}`} ref={ref1}>
                     <h1>Portfolio</h1>
-                    <p className='subheading text-center'>Here you find a list of side projects I have built for fun to showcase some of my abilities. <br /> All project have links to their GitHub repo.</p>
+                    <p className='subheading text-center'>Here you find a list of side projects that I have built for fun to showcase some of my abilities. <br /> All projects have a link to their GitHub repository.</p>
                 </div>
                 <div className={`mt-20 ${transitionClasses2}`} ref={ref2}>
                     <ProjectCardWrapper projects={projectsData} moreComing={true} />
