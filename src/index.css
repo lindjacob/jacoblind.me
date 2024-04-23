@@ -35,6 +35,22 @@
         @apply text-sm;
     }
 
+    #resume-download h1 {
+        @apply text-lg text-[#1d1d26] font-medium mt-3 mb-0;
+    }
+    #resume-download h2 {
+        @apply text-sm text-[#1d1d26] font-medium my-0;
+    }
+    #resume-download h3 {
+        @apply text-xs text-[#1d1d26] font-medium;
+    }
+    #resume-download h4 {
+        @apply text-xs text-[#1d1d26] font-medium;
+    }
+    #resume-download p {
+        @apply text-[#77777d] text-[10px] font-medium opacity-100;
+    }
+
     #projectDescription h2 {
         @apply md:text-4xl
     }

@@ -11,6 +11,7 @@ import Languages from './Languages';
 import Awards from './Awards';
 import Recommendations from './Recommendations';
 import useInViewTransition from '../../hooks/useInViewTransition';
+import resumeData from '../../resumeData.json';
 
 export default function index() {
     const { ref: ref1, transitionClasses: transitionClasses1 } = useInViewTransition();
@@ -27,16 +28,16 @@ export default function index() {
                         </div>
                     </div>
                     <h1>Jacob Lind</h1>
-                    <p className='subheading -mt-6'>Full Stack Developer with Expertise in Product Innovation</p>
+                    <p className='subheading -mt-6'>{resumeData.tagline}</p>
                     <CtaButtons />
                 </div>
                 <div id='resume' className='mt-24 flex flex-col gap-4'>
                     <div className='flex flex-col md:flex-row gap-4'>
                         <Container className={`w-full min-h-[350px] md:min-h-0 md:w-1/3 bg-[url('/profilePhoto.webp')] bg-cover bg-center`} />
-                        <Profile />
+                        <Profile data={resumeData} />
                     </div>
                     <WorkedWith />
-                    <WorkExperience />
+                    <WorkExperience data={resumeData} />
                     <Education />
                     {/* <Certifications /> */}
                     <Skills />
