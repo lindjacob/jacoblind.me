@@ -25,10 +25,10 @@ export default function Skills() {
                 <Skill title={'ER Diagrams'} />
                 <Skill title={'Flowcharts'} />
                 <Skill title={'Project Management'} />
-                <Skill title={'Entrepeneurship'} />
-                <Skill title={'Business Development'} />
                 <Skill title={'Strategy'} />
+                <Skill title={'Entrepeneurship'} />
                 <Skill title={'Leadership'} />
+                <Skill title={'Business Development'} />
                 <Skill title={'Negotiation'} />
             </div>
         </Container>

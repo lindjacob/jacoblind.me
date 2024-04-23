@@ -11,6 +11,7 @@ import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 import { GoRocket } from "react-icons/go";
 import { RiUserStarLine } from "react-icons/ri";
 import resumeData from '../../../resumeData.json';
+import { FaGlobe } from "react-icons/fa";
 
 export default function index() {
 
@@ -45,6 +46,10 @@ export default function index() {
                                 <a href='mailto:contact@jacoblind.me'>
                                     <FaEnvelope size='0.8rem' className='text-[#8e8e92]' />
                                     <p className='underline underline-offset-2'>contact@jacoblind.me</p>
+                                </a>
+                                <a href='https://jacoblind.me' target='_blank'>
+                                    <FaGlobe size='0.8rem' className='text-[#8e8e92]' />
+                                    <p className='underline underline-offset-2'>jacoblind.me</p>
                                 </a>
                                 <a href='https://www.linkedin.com/in/jacoblindseo/' target='_blank'>
                                     <FaLinkedin size='0.8rem' className='text-[#8e8e92]' />
