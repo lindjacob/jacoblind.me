@@ -5,7 +5,9 @@ import Location from "./Location";
 export default function Experience({ position, company, type, location, dateFromTo, description }) {
     return (
         <div className='flex gap-6'>
-            <div className='size-2 bg-white rounded-full mt-[10px] -ml-[5px]' />
+            <div className='size-3 p-[1px] bg-[#1b2025] border-[1px] border-[8e8e92] rounded-full mt-2 -ml-[7px] flex justify-center items-center'>
+                <div className='size-2 bg-white rounded-full' />
+            </div>
             <div className='w-full'>
                 <div className='flex flex-col md:flex-row md:justify-between'>
                     <div className='mb-4 md:mb-0'>
