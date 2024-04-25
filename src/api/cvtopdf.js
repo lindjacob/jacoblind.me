@@ -7,9 +7,9 @@ export default async function fetchPDF() {
         const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL, {
             method: 'GET',
             headers: {
-                'Authorization': `Basic ${base64Credentials}`,
-                'Accept': 'application/pdf'
-            }
+                'Authorization': `Basic ${base64Credentials}`
+            },
+            redirect: 'follow'
         });
 
         if (!response.ok) {
