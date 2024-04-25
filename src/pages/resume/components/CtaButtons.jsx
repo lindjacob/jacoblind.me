@@ -10,14 +10,19 @@ export default function CtaButtons() {
         setIsDownloading(true);
         try {
             const blob = await fetchPDF();
-            const url = window.URL.createObjectURL(new Blob([blob]));
-            const link = document.createElement("a");
+            const url = window.URL.createObjectURL(blob);
+            const link = document.createElement('a');
             link.href = url;
-            link.download = 'resume.pdf';
+            link.download = 'resume_jacob_lind.pdf';
             document.body.appendChild(link);
 
             link.click();
 
+            // Short delay to ensure download starts
+            setTimeout(() => {
+                document.body.removeChild(link);
+                window.URL.revokeObjectURL(url);
+            }, 100);
             document.body.removeChild(link);
             window.URL.revokeObjectURL(url);
             
@@ -53,7 +58,7 @@ export default function CtaButtons() {
                 ) : (
                     <PiDownloadSimple size='1.5rem' />
                 )}
-                {isDownloading ? 'Processing...' : downloadSuccess ? 'Downloaded!' : 'Download Resume'}
+                {isDownloading ? 'Generating PDF...' : downloadSuccess ? 'Download Successful' : 'Download Resume'}
             </button>
         </div>
     );
