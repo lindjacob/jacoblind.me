@@ -7,18 +7,16 @@ export default async function fetchPDF() {
         const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL, {
             method: 'GET',
             headers: {
-                'Authorization': `Basic ${base64Credentials}`
+                'Authorization': `Basic ${base64Credentials}`,
+                'Accept': 'application/pdf'
             },
-            redirect: 'follow'
         });
 
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const buf = await response.arrayBuffer();
-        const data = Buffer.from(buf).toString('base64');
-        return data;
+        return await response.blob();
     } catch (error) {
         console.error('Error fetching PDF:', error);
         throw error;

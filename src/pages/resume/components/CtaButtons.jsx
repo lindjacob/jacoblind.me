@@ -9,14 +9,15 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const data = await fetchPDF();
-            const downloadUrl = 'data:application/pdf;base64,' + data;
+            const blob = await fetchPDF();
+            const downloadUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = downloadUrl;
-            link.setAttribute('download', 'resume.pdf');
+            link.download = "resume.pdf";
             document.body.appendChild(link);
             link.click();
-            link.parentNode.removeChild(link);
+            window.URL.revokeObjectURL(downloadUrl);
+            link.remove();
             setDownloadSuccess(true);
             setTimeout(() => {
                 setDownloadSuccess(false);
