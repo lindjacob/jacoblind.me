@@ -14,6 +14,7 @@ export default function CtaButtons() {
             }
             const contentDisposition = response.headers.get('Content-Disposition');
             if (contentDisposition === null || !contentDisposition.includes('filename="resume.pdf"')) {
+                consle.log('Content-Disposition:', contentDisposition);
                 throw new Error('Invalid file type or filename');
             }
             const blob = await response.blob();
