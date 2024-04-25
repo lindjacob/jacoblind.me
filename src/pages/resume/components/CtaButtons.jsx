@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { PiDownloadSimple, PiEnvelopeSimple, PiCheck } from "react-icons/pi";
+import fetchPDF from '../../../api/cvtopdf';
 
 export default function CtaButtons() {
     const [isDownloading, setIsDownloading] = useState(false);
@@ -8,25 +9,7 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const response = await fetch('https://jacoblind.me/generate-pdf', {
-                headers: {
-                    'Accept': 'application/pdf'
-                }
-            });
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            console.log('response:', response);
-            console.log('response data:', response.data);
-            const contentDisposition = response.headers.get('Content-Disposition');
-            if (contentDisposition === null || !contentDisposition.includes('filename="resume.pdf"')) {
-                console.log('Content-Disposition:', contentDisposition);
-                throw new Error('Invalid file type or filename');
-            }
-            const blob = await response.blob();
-            if (blob.size < 2000) { // Assuming the file should be larger than 2KB
-                throw new Error('File size is too small to be correct');
-            }
+            const blob = await fetchPDF();
             const downloadUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = downloadUrl;
@@ -51,8 +34,8 @@ export default function CtaButtons() {
                 <PiEnvelopeSimple size='1.5rem' />
                 Send Email
             </a>
-            <button
-                onClick={handleDownload}
+            <button 
+                onClick={handleDownload} 
                 className={`button secondary flex items-center ${isDownloading ? 'bg-gray-500 cursor-not-allowed' : downloadSuccess ? 'bg-green-500' : 'bg-indigo-500'}`}
                 disabled={isDownloading}
             >
