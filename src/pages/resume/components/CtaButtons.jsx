@@ -8,7 +8,11 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL);
+            const response = await fetch('https://jacoblind.me/generate-pdf', {
+                headers: {
+                    'Accept': 'application/pdf'
+                }
+            });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -47,8 +51,8 @@ export default function CtaButtons() {
                 <PiEnvelopeSimple size='1.5rem' />
                 Send Email
             </a>
-            <button 
-                onClick={handleDownload} 
+            <button
+                onClick={handleDownload}
                 className={`button secondary flex items-center ${isDownloading ? 'bg-gray-500 cursor-not-allowed' : downloadSuccess ? 'bg-green-500' : 'bg-indigo-500'}`}
                 disabled={isDownloading}
             >
