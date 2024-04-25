@@ -8,18 +8,15 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL);
+            const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL, {
+                headers: {
+                    'Accept': 'application/pdf'
+                }
+            });
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const blob = await response.blob();
-            // Check if the blob is a PDF by looking at the MIME type
-            if (blob.type !== 'application/pdf') {
-                throw new Error('Expected a PDF file');
-            }
-            if (blob.size < 1000) { // Assuming the file should be larger than 1KB
-                throw new Error('File size is too small to be correct');
-            }
             const downloadUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = downloadUrl;
