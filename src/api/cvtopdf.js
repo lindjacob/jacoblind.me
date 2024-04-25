@@ -17,7 +17,6 @@ export default async function fetchPDF() {
         }
 
         const blob = await response.blob();
-        console.log(`Received PDF size: ${blob.size} bytes`);
         return blob;
     } catch (error) {
         console.error('Error fetching PDF:', error);
