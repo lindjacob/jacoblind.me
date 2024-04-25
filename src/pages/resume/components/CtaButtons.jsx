@@ -9,7 +9,17 @@ export default function CtaButtons() {
         setIsDownloading(true);
         try {
             const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL);
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            const contentDisposition = response.headers.get('Content-Disposition');
+            if (!contentDisposition.includes('filename="resume.pdf"')) {
+                throw new Error('Invalid file type or filename');
+            }
             const blob = await response.blob();
+            if (blob.size < 1000) { // Assuming the file should be larger than 1KB
+                throw new Error('File size is too small to be correct');
+            }
             const downloadUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = downloadUrl;
@@ -20,7 +30,7 @@ export default function CtaButtons() {
             setDownloadSuccess(true);
             setTimeout(() => {
                 setDownloadSuccess(false);
-            }, 3000);  // Reset success state after 3 seconds
+            }, 3000);
         } catch (error) {
             console.error('Download failed:', error);
         } finally {
