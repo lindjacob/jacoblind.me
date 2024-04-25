@@ -9,15 +9,17 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const blob = await fetchPDF();
-            const downloadUrl = window.URL.createObjectURL(blob);
-            const link = document.createElement('a');
-            link.href = downloadUrl;
-            link.download = "resume.pdf";
+            const url = window.URL.createObjectURL(new Blob([blob]));
+            const link = document.createElement("a");
+            link.href = url;
+            link.download = 'resume.pdf';
             document.body.appendChild(link);
+
             link.click();
-            window.URL.revokeObjectURL(downloadUrl);
-            link.remove();
+
+            document.body.removeChild(link);
+            window.URL.revokeObjectURL(url);
+            
             setDownloadSuccess(true);
             setTimeout(() => {
                 setDownloadSuccess(false);
@@ -35,8 +37,8 @@ export default function CtaButtons() {
                 <PiEnvelopeSimple size='1.5rem' />
                 Send Email
             </a>
-            <button 
-                onClick={handleDownload} 
+            <button
+                onClick={handleDownload}
                 className={`button secondary flex items-center ${isDownloading ? 'bg-gray-500 cursor-not-allowed' : downloadSuccess ? 'bg-green-500' : 'bg-indigo-500'}`}
                 disabled={isDownloading}
             >
