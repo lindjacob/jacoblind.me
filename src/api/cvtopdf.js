@@ -1,4 +1,4 @@
-export default fetchPDF = async () => {
+export default async function fetchPDF() {
     const username = import.meta.env.VITE_CVTOPDF_API_USER;
     const password = import.meta.env.VITE_CVTOPDF_API_PASSWORD;
     const base64Credentials = btoa(`${username}:${password}`);
