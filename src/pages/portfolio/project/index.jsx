@@ -20,12 +20,12 @@ const ProjectPage = () => {
   return (
     <Page>
       <Section>
-        <div className='flex flex-col sm:flex-row'>
-          <div className='sm:w-3/4 md:w-2/3'>
-            <h1>{project.title}</h1>
+        <div className='flex flex-col sm:flex-row justify-between'>
+          <div>
+            <h1 className='mb-0'>{project.title}</h1>
             <p className='subheading'>{project.subheading}</p>
           </div>
-          <div className='my-7 sm:w-1/4 md:w-1/3 flex sm:justify-end items-end'>
+          <div className='mt-5 sm:mt-0 sm:ml-10 flex sm:justify-end items-end'>
             <ScrollButton href='#about' />
           </div>
         </div>
