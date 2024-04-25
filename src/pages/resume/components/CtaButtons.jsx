@@ -12,6 +12,8 @@ export default function CtaButtons() {
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
+            console.log('response:', response);
+            console.log('response data:', response.data);
             const contentDisposition = response.headers.get('Content-Disposition');
             if (contentDisposition === null || !contentDisposition.includes('filename="resume.pdf"')) {
                 console.log('Content-Disposition:', contentDisposition);
