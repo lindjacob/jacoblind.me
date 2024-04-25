@@ -9,8 +9,8 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const blob = await fetchPDF();
-            const downloadUrl = window.URL.createObjectURL(blob);
+            const data = await fetchPDF();
+            const downloadUrl = 'data:application/pdf;base64,' + data;
             const link = document.createElement('a');
             link.href = downloadUrl;
             link.setAttribute('download', 'resume.pdf');

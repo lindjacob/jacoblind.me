@@ -16,8 +16,9 @@ export default async function fetchPDF() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
 
-        const blob = await response.blob();
-        return blob;
+        const buf = await response.arrayBuffer();
+        const data = Buffer.from(buf).toString('base64');
+        return data;
     } catch (error) {
         console.error('Error fetching PDF:', error);
         throw error;
