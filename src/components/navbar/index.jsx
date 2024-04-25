@@ -24,7 +24,7 @@ const Navbar = () => {
             <nav className='h-[10vh] flex items-center bg-black-primary'>
                 <Container>
                     <div className='py-4 md:py-8 flex items-center justify-between w-full relative'>
-                        <a href={import.meta.env.VITE_API_URL} className='flex items-center space-x-3 hover:scale-110 transition-all duration-300'>
+                        <a href='/' className='flex items-center space-x-3 hover:scale-110 transition-all duration-300'>
                             <img src={logo} className='h-4' alt='logo' />
                             <span className='text-2xl font-semibold'>Jacob Lind</span>
                         </a>
