@@ -8,19 +8,22 @@ export default function CtaButtons() {
     const handleDownload = async () => {
         setIsDownloading(true);
         try {
-            const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL, {
-                headers: {
-                    'Accept': 'application/pdf'
-                }
-            });
+            const response = await fetch(import.meta.env.VITE_CVTOPDF_API_URL);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
+            const contentDisposition = response.headers.get('Content-Disposition');
+            if (contentDisposition === null || !contentDisposition.includes('filename="resume.pdf"')) {
+                throw new Error('Invalid file type or filename');
+            }
             const blob = await response.blob();
+            if (blob.size < 2000) { // Assuming the file should be larger than 2KB
+                throw new Error('File size is too small to be correct');
+            }
             const downloadUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = downloadUrl;
-            link.setAttribute('download', 'resume.pdf'); // Set a default filename here
+            link.setAttribute('download', 'resume.pdf');
             document.body.appendChild(link);
             link.click();
             link.parentNode.removeChild(link);
