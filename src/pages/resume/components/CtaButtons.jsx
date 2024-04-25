@@ -13,7 +13,7 @@ export default function CtaButtons() {
             const downloadUrl = window.URL.createObjectURL(blob);
             const link = document.createElement('a');
             link.href = downloadUrl;
-            link.setAttribute('download', 'resume_jacob_lind.pdf');
+            link.setAttribute('download', 'resume.pdf');
             document.body.appendChild(link);
             link.click();
             link.parentNode.removeChild(link);
