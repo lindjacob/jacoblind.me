@@ -1,5 +1,24 @@
 [
     {
+        "id": "imagemint",
+        "title": "Image Mint",
+        "subheading": "Mint your images into NFTs.",
+        "featuredImage": "/imagemint.webp",
+        "client": "",
+        "services": "",
+        "technologies": [
+            "nextjs",
+            "tailwindcss"
+        ],
+        "website": "https://imagemint.jacoblind.me/",
+        "github": "https://github.com/lindjacob/imagemint",
+        "about": "Text coming soon...",
+        "goal": "To showcase work with web3.",
+        "result": "",
+        "future": "",
+        "collaborations": ""
+    },
+    {
         "id": "simply-finance",
         "title": "Simply Finance",
         "subheading": "Get an understanding for your income allocation's effect on your future finances.",

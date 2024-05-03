@@ -18,7 +18,7 @@ export default function IconBox({ icon }) {
     'java': FaJava,
     'django': SiDjango,
     'google cloud platform': SiGooglecloud,
-    'next.js': SiNextdotjs,
+    'nextjs': SiNextdotjs,
     'css': FaCss3Alt
   };
 
