@@ -2,7 +2,7 @@ import { BiLogoTypescript, BiLogoGraphql } from 'react-icons/bi';
 import { TbSql } from 'react-icons/tb';
 import { RiJavascriptFill } from 'react-icons/ri';
 import { FaReact, FaPython, FaDocker, FaJava, FaCss3Alt } from 'react-icons/fa';
-import { SiTailwindcss, SiDjango, SiGooglecloud, SiNextdotjs } from 'react-icons/si';
+import { SiTailwindcss, SiDjango, SiGooglecloud, SiNextdotjs, SiSolidity } from 'react-icons/si';
 import { GrStatusUnknown } from "react-icons/gr";
 
 export default function IconBox({ icon }) {
@@ -19,7 +19,8 @@ export default function IconBox({ icon }) {
     'django': SiDjango,
     'google cloud platform': SiGooglecloud,
     'nextjs': SiNextdotjs,
-    'css': FaCss3Alt
+    'css': FaCss3Alt,
+    'solidity': SiSolidity,
   };
 
   const IconComponent = icons[icon] || GrStatusUnknown;
