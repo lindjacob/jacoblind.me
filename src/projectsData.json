@@ -14,10 +14,10 @@
         ],
         "website": "https://imagemint.jacoblind.me/",
         "github": "https://github.com/lindjacob/imagemint",
-        "about": "This project utilizes OpenZeppelin's ERC721 contract template to create a Solidity smart contract that enables users to mint up to 10,000 images as NFTs. Deployed on the Polygon mainnet, this platform offers an affordable and interactive experience for users. <br /><br /> The frontend is developed using Next.js and TypeScript, providing a user-friendly interface for interacting with the application. Users can easily connect their MetaMask wallets via the Ethereum window object and proceed to mint their images. Image uploading and pinning are handled securely through Pinata's API, ensuring that images are permanently stored on the InterPlanetary File System (IPFS). <br /><br /> After entering all necessary metadata, users can mint their NFTs directly through the smart contract and seamlessly store them on the blockchain. The application leverages Wagmi for efficient and reliable blockchain transactions. <br /><br /> This project not only offers a practical application of blockchain technology but also provides a platform for users to engage with digital asset creation and management.",
-        "goal": "To showcase work with web3.",
+        "about": "This project utilizes OpenZeppelin's ERC721 contract template to create a Solidity smart contract with a small adition that limits users to mint up to 10,000 images as NFTs. Deployed on the Polygon mainnet, this platform offers an affordable and interactive experience for users. <br /><br /> The frontend is developed using Next.js and TypeScript, providing a user-friendly interface for interacting with the application. Users can easily connect their MetaMask wallets via the Ethereum window object and proceed to mint their images. Image uploading and pinning are handled securely through Pinata's API, ensuring that images are permanently stored on the InterPlanetary File System (IPFS). <br /><br /> After entering all necessary metadata, users can mint their NFTs directly through the smart contract and seamlessly store them on the blockchain. The application leverages Wagmi for efficient and reliable blockchain transactions. <br /><br /> This project not only offers a practical application of blockchain technology but also provides a platform for users to engage with digital asset creation and management.",
+        "goal": "",
         "result": "",
-        "future": "",
+        "future": "I am planning to continue working on this project to include more more features. In these expansions I will focus on expanding my work with the blockchain and smart contracts.",
         "collaborations": ""
     },
     {
