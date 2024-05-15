@@ -15,9 +15,9 @@ export default function Education() {
             <div>
                 <h3>Aarhus University</h3>
                 <DotLine text1={`Bachelor's degree`} text2={`Computer Science`} />
-                <div className='mt-2'>
+                {/* <div className='mt-2'>
                     <DateBox dateFromTo={'Aug 2020 - Jun 2023'} />
-                </div>
+                </div> */}
             </div>
             <div className='mt-4'>
                 <h4>Bachelor Project: Exploring Closest Points Algorithms</h4>
@@ -28,7 +28,7 @@ export default function Education() {
                     Supervisor: Peyman Afshani <br />
                     Grade: B/B+
                 </p>
-                <img src={auLogoWhite} className='w-[60px] mt-2' />
+                <img src={auLogoWhite} className='w-[100px] mt-4' /> {/* w-60 previously */}
             </div>
         </Container>
     )
