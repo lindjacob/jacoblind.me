@@ -18,7 +18,7 @@ export default function Education() {
                     <h3>Aarhus University</h3>
                     <DotLine text1={`Bachelor's degree`} text2={`Computer Science`} />
                 </div>
-                {/* <DateBox dateFromTo={'Aug 2020 - Jun 2023'} /> */}
+                <DateBox dateFromTo={'Aug 2020 - Jun 2023'} />
             </div>
             <div className='mt-4 max-w-[430px]'>
                 <h4 className='mt-4'>Bachelor Project: Exploring Closest Points Algorithms</h4>
