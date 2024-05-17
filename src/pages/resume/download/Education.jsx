@@ -22,7 +22,7 @@ export default function Education() {
                     </div>
                     <DateBox dateFromTo={'Aug 2020 - Jun 2023'} />
                     </div>
-                    <div className='mt-4 max-w-[350px]'>
+                    <div className='mt-4 max-w-[300px]'>
                         <h4>Bachelor Project: Exploring Closest Points Algorithms</h4>
                         <p>
                             Built and optimized an algorithm in Python to find the two closest points in a k-dimensional point set in O(nlogn) time.
