@@ -5,7 +5,7 @@ import { PiSuitcaseSimple } from 'react-icons/pi';
 
 export default function WorkExperience({ data }) {
     return (
-        <Container className='flex-grow'>
+        <Container>
             <Header
                 IconComponent={PiSuitcaseSimple}
                 title={'Work Experience'}
