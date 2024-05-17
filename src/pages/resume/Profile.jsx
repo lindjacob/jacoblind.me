@@ -8,7 +8,7 @@ export default function Profile({ data }) {
         <Container className='w-full md:w-2/3 pb-2'>
             <IconBox IconComponent={PiUserList} />
             <h2>Professional profile</h2>
-            <p>{data.profile}</p>
+            <p>{data.profile.professional}</p>
             <Location locationText={data.location} />
         </Container>
     )

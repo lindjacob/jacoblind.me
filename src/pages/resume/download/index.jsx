@@ -12,11 +12,12 @@ import { GoRocket } from "react-icons/go";
 import { RiUserStarLine } from "react-icons/ri";
 import resumeData from '../../../resumeData.json';
 import { FaGlobe } from "react-icons/fa";
+import Referrals from './Referrals';
 
 export default function index() {
 
     return (
-        <div id='resume-download' className={`m-auto w-[794px] h-[1123px] p-5 bg-[#f9f9f9] *:gap-2 *:*:gap-2 *:*:*:gap-2 *:*:*:*:gap-2`}>
+        <div id='resume-download' className={`m-auto w-[794px] h-[calc(1123px*2)] p-5 bg-[#f9f9f9] *:gap-2 *:*:gap-2 *:*:*:gap-2 *:*:*:*:gap-2`}>
             <div className='h-full overflow-hidden'>
                 <div className='grid grid-cols-3'>
                     <div className='col-span-2 flex flex-col h-[1083px]'>
@@ -30,8 +31,12 @@ export default function index() {
                             </Container>
                         </div>
                         <Container>
-                            <Header IconComponent={RiUserStarLine} title='Professional Profile' />
-                            <p>{resumeData.profile}</p>
+                            <Header IconComponent={RiUserStarLine} title='Profile' />
+                            <h3>Professional</h3>
+                            <p>{resumeData.profile.professional}</p>
+
+                            <h3 className='mt-4'>Personal</h3>
+                            <p>{resumeData.profile.personal}</p>
                         </Container>
                         <WorkExperience data={resumeData} />
                     </div>
@@ -64,6 +69,7 @@ export default function index() {
                         <Skills />
                         <Languages />
                         <Education />
+                        <Referrals />
                     </div>
                 </div>
             </div>

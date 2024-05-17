@@ -1,6 +1,9 @@
 {
     "tagline": "Full Stack Web Developer & Consultant",
-    "profile": "From entrepreneurship to leading technical projects at DEKRA, I've consistently delivered impactful results. My career is a unique blend of marketing and business insight, coupled with two decades of passion-driven development and a formal education in Computer Science. As an extrovert, I seamlessly communicate complex technical and business concepts to diverse audiences, driving collaboration and innovation. I have an insatiable hunger to learn and I am highly motivated by tasks that require me to be innovative, where I can use my creativity and my intuition.",
+    "profile": {
+        "professional": "From entrepreneurship to leading technical projects at DEKRA, I've consistently delivered impactful results. My career is a unique blend of marketing and business insight, coupled with two decades of passion-driven development and a formal education in Computer Science. As an extrovert, I seamlessly communicate complex technical and business concepts to diverse audiences, driving collaboration and innovation. I have an insatiable hunger to learn and I am highly motivated by tasks that require me to be innovative, where I can use my creativity and my intuition.",
+        "personal": "I am an eternal optimist, always seeing the best in people and the world around me. Social and competitive, I thrive on engaging in sports, board games, and continuously learning new things. With dreams of living in various countries, I'm eager to explore and experience all that different cultures have to offer."
+    },
     "location": "Based in Aarhus, Denmark",
     "workExperience": [
         {
@@ -9,7 +12,7 @@
             "type": "Full Time",
             "location": "Remote - Copenhagen, Denmark",
             "dateFromTo": "Jun 2022 - Present",
-            "description": "Re-hired to develop and manage a comprehensive data warehouse and visualization, enhancing decision-making capabilities and fostering a data-informed business culture. My work has involved tools such as Express.js, SQL, GCP."
+            "description": "I was re-hired to engineer a comprehensive data warehouse, integrating data from various online channels and internal systems, some of which I had previously developed. This initiative aimed to bolster decision-making and promote a data-driven culture within the company. My process began with in-depth interviews with department directors and managers to identify the most critical KPIs and metrics for insightful analysis. <br /> I successfully designed and implemented a data warehouse in Google BigQuery, orchestrated through a suite of microservices running on Google Cloud Platform (GCP). The backbone of the system was constructed using Node.js and Express.js, ensuring robust and scalable backend operations."
         },
         {
             "position": "Backend Developer",
@@ -17,7 +20,7 @@
             "type": "Contract",
             "location": "Remote - Copenhagen, Denmark",
             "dateFromTo": "Feb 2022 - May 2022",
-            "description": "Developed custom Shopify solutions using Express.js. Collaborated on architectural planning and contributed to scalable backend systems, enhancing team delivery and project effectiveness."
+            "description": "At D.TAILS, I developed backend solutions for custom Shopify platforms using Express.js and PostgreSQL. This role introduced me to agile methodologies, particularly the Scrum process, where I actively participated in weekly sprint planning and architectural meetings. These meetings were crucial in ensuring the scalability and forward compatibility of our systems. <br/> During my tenure, I gained proficiency in utilizing Ngrok to establish secure connections to our test environments, enhancing our development and testing workflows. I also learned to use Sentinel for monitoring and troubleshooting in a microservices architecture, which significantly improved our service reliability and issue resolution speed."
         },
         {
             "position": "Developer Consultant",
@@ -25,7 +28,7 @@
             "type": "Contract",
             "location": "Remote - Copenhagen, Denmark",
             "dateFromTo": "Apr 2021 - Mar 2022",
-            "description": "Led key digitalization initiatives, developing custom software solutions that automated critical operations, streamlined client information management, and significantly reduced errors and stress in workplace environments. The work involved architecture considerations and backend programming in a Node.js environment."
+            "description": "I was hired in as a consultant to drive digitalization initiatives, creating custom software solutions that automated essential operations, streamlined client information processes, and markedly decreased errors and workplace stress. One notable project I led increased operational efficiency by 66%, enabling one person to perform the work previously done by three. <br/> The development process for each project began with comprehensive information gathering from employees and managers. This data was used to construct detailed flowcharts and mockups, which were validated by stakeholders before proceeding. I then outlined the final designs and system architecture. The implementation phase involved developing the backend with Node.js and crafting the frontend with pure JavaScript to ensure compatibility with the existing system architecture."
         },
         {
             "position": "Marketing Manager",
@@ -33,7 +36,7 @@
             "type": "Full Time",
             "location": "Aarhus, Denmark",
             "dateFromTo": "Feb 2019 - Aug 2020",
-            "description": "Developed and managed Connexio's social media-driven recruitment product, overseeing all technical and creative campaign aspects. Also designed operational processes and success metrics, enhancing overall project efficiency."
+            "description": "At Connexio's I was in charge of their new social media-driven recruitment product, overseeing both the technical and creative aspects of campaigns. Additionally, I designed operational processes and success metrics to boost project efficiency. <br/> Although my primary role focused on managing marketing efforts within a small team, a significant portion of my responsibilities shifted towards technical development. I engineered a backend system using Node.js that seamlessly integrated with our CRM, leveraging Monday.com's GraphQL API. This system automated the addition of leads to the CRM and facilitated communication by sending emails and text messages through third-party software."
         },
         {
             "position": "Founder & Business Owner",
@@ -41,7 +44,7 @@
             "type": "Full Time",
             "location": "Aarhus, Denmark",
             "dateFromTo": "Nov 2015 - Jan 2019",
-            "description": "Started and operated a marketing consultancy, overseeing a team and managing diverse projects ranging from SEO to automated funnels and front-end development. Focused on maximizing profitability and delivering tailored solutions across multiple marketing disciplines."
+            "description": "I founded and led a marketing consultancy, directing a team and managing a diverse array of projects, from SEO strategies to the development of automated marketing funnels and front-end design. My focus was on driving profitability and crafting customized solutions across various marketing disciplines. <br/> The venture began during my medical studies and evolved into a full-time enterprise, prompting me to relocate my office to Bangkok and expand the team by hiring two employees. As the business matured, my role increasingly shifted towards technical responsibilities, including implementing marketing automation systems and optimizing conversion rates for landing pages using WordPress and React."
         }
     ]
 }
