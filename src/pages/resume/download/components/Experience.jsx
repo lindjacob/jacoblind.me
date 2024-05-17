@@ -17,7 +17,7 @@ export default function Experience({ position, company, type, location, dateFrom
                     <DateBox dateFromTo={dateFromTo} />
                 </div>
                 <Location locationText={location} size='sm' />
-                <p className='max-w-[550px]' dangerouslySetInnerHTML={{ __html: description }} />
+                <p className='max-w-[530px]' dangerouslySetInnerHTML={{ __html: description }} />
             </div>
         </div>
     )
