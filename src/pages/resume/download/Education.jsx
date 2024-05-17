@@ -8,21 +8,21 @@ import Divider from './components/Divider';
 
 export default function Education() {
     return (
-        <Container className='flex-grow'>
+        <Container>
             <Header
                 IconComponent={PiGraduationCap}
                 title={'Education'}
             />
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-2'>
                 <div>
+                    <div className='flex justify-between'>
                     <div>
                         <h3>Aarhus University</h3>
                         <DotLine text1={`Bachelor of Science`} text2={`Computer Science`} />
-                        <div className='mt-2'>
-                            <DateBox dateFromTo={'Aug 2020 - Jun 2023'} />
-                        </div>
                     </div>
-                    <div className='mt-4'>
+                    <DateBox dateFromTo={'Aug 2020 - Jun 2023'} />
+                    </div>
+                    <div className='mt-4 max-w-[350px]'>
                         <h4>Bachelor Project: Exploring Closest Points Algorithms</h4>
                         <p>
                             Built and optimized an algorithm in Python to find the two closest points in a k-dimensional point set in O(nlogn) time.
@@ -36,20 +36,22 @@ export default function Education() {
                     </div>
                 </div>
                 <Divider short />
-                <div className='flex flex-col gap-5'>
+                <div className='flex flex-col gap-4 *:flex *:justify-between'>
                     <div>
-                        <h3>Aarhus University (interrupted)</h3>
-                        <DotLine text1={`Bachelor of Science`} text2={`Medicine`} />
-                        <div className='mt-2'>
-                            <DateBox dateFromTo={'Feb 2015 - Jan 2017'} />
+                        <div>
+                            <h3>Aarhus University (interrupted)</h3>
+                            <DotLine text1={`Bachelor of Science`} text2={`Medicine`} />
                         </div>
+                        <DateBox dateFromTo={'Feb 2015 - Jan 2017'} />
+
                     </div>
                     <div>
-                        <h3>Aarhus University (interrupted)</h3>
-                        <DotLine text1={`Bachelor of Science`} text2={`Molecular Biology`} />
-                        <div className='mt-2'>
-                            <DateBox dateFromTo={'Sep 2013 - Jan 2015'} />
+                        <div>
+                            <h3>Aarhus University (interrupted)</h3>
+                            <DotLine text1={`Bachelor of Science`} text2={`Molecular Biology`} />
                         </div>
+                        <DateBox dateFromTo={'Sep 2013 - Jan 2015'} />
+
                     </div>
                 </div>
             </div>

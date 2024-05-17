@@ -5,7 +5,7 @@ import Location from "../../components/Location";
 export default function Experience({ position, company, type, location, dateFromTo, description }) {
     return (
         <div className='flex gap-4'>
-            <div className=' size-3 p-[1px] bg-white border-[1px] border-[8e8e92] rounded-full mt-[2px] -ml-[7px] flex justify-center items-center'>
+            <div className=' size-3 p-[1px] bg-white border-[1px] border-[8e8e92] rounded-full mt-[2px] -ml-[15px] flex justify-center items-center'>
                 <div className='size-2 dark:bg-white bg-[#8e8e92] rounded-full' />
             </div>
             <div className='w-full'>
@@ -17,7 +17,7 @@ export default function Experience({ position, company, type, location, dateFrom
                     <DateBox dateFromTo={dateFromTo} />
                 </div>
                 <Location locationText={location} size='sm' />
-                <p className='max-w-[430px]' dangerouslySetInnerHTML={{ __html: description }} />
+                <p className='max-w-[550px]' dangerouslySetInnerHTML={{ __html: description }} />
             </div>
         </div>
     )

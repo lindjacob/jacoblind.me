@@ -2,18 +2,17 @@ import React from 'react';
 import Container from './components/Container';
 import Header from './components/Header';
 import { PiHandHeart } from 'react-icons/pi';
-import Divider from './components/Divider';
 import DotLine from './components/DotLine';
 
 export default function Referrals() {
     return (
-        <Container>
+        <Container className=''>
             <Header
                 IconComponent={PiHandHeart}
                 title={'Referrals'}
             />
 
-            <div className='flex flex-col gap-4'>
+            <div className='flex justify-between gap-4'>
                 <div>
                     <h3>Søren Hansen</h3>
                     <DotLine text1={'DEKRA'} text2={'Ecommerce Manager'} />

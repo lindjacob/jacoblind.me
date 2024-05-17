@@ -17,59 +17,67 @@ import Referrals from './Referrals';
 export default function index() {
 
     return (
-        <div id='resume-download' className={`m-auto w-[794px] h-[calc(1123px*2)] p-5 bg-[#f9f9f9] *:gap-2 *:*:gap-2 *:*:*:gap-2 *:*:*:*:gap-2`}>
-            <div className='h-full overflow-hidden'>
-                <div className='grid grid-cols-3'>
-                    <div className='col-span-2 flex flex-col h-[1083px]'>
-                        <div className='flex'>
-                            <Container className={`w-[180px] bg-[url('/profilePhoto.webp')] bg-cover bg-[center_-10px]`} />
-                            <Container className=''>
-                                <IconBox size='sm' IconComponent={GoRocket} />
-                                <h1>Jacob Lind</h1>
-                                <p className='!text-xs'>{resumeData.tagline}</p>
-                                <Location locationText={resumeData.location} size='sm' className={'mb-0'} />
-                            </Container>
-                        </div>
-                        <Container>
-                            <Header IconComponent={RiUserStarLine} title='Profile' />
-                            <h3>Professional</h3>
-                            <p>{resumeData.profile.professional}</p>
-
-                            <h3 className='mt-4'>Personal</h3>
-                            <p>{resumeData.profile.personal}</p>
-                        </Container>
-                        <WorkExperience data={resumeData} />
-                    </div>
-                    <div className='flex flex-col h-[1083px]'>
-                        <Container>
-                            <Header IconComponent={IoHeadsetOutline} title='Contact' />
-                            <div className='flex flex-col gap-2 *:gap-2 *:flex *:items-center'>
-                                <a href='tel:+4521221945'>
-                                    <FaPhoneAlt size='0.8rem' className='text-[#8e8e92]' />
-                                    <p className='underline underline-offset-2'>+45 21221945</p>
-                                </a>
-                                <a href='mailto:contact@jacoblind.me'>
-                                    <FaEnvelope size='0.8rem' className='text-[#8e8e92]' />
-                                    <p className='underline underline-offset-2'>contact@jacoblind.me</p>
-                                </a>
-                                <a href='https://jacoblind.me' target='_blank'>
-                                    <FaGlobe size='0.8rem' className='text-[#8e8e92]' />
-                                    <p className='underline underline-offset-2'>jacoblind.me</p>
-                                </a>
-                                <a href='https://www.linkedin.com/in/jacoblindseo/' target='_blank'>
-                                    <FaLinkedin size='0.8rem' className='text-[#8e8e92]' />
-                                    <p className='underline underline-offset-2'>linkedin.com/in/jacoblindseo</p>
-                                </a>
-                                <a href='https://github.com/lindjacob' target='_blank'>
-                                    <FaGithub size='0.8rem' className='text-[#8e8e92]' />
-                                    <p className='underline underline-offset-2'>github.com/lindjacob</p>
-                                </a>
+        <div id='resume-download'>
+            <div className={`m-auto w-[794px] h-[calc(1123px*1)] p-5 bg-[#f9f9f9] *:gap-2 *:*:gap-2 *:*:*:gap-2 *:*:*:*:gap-2`}>
+                <div className='h-full overflow-hidden'>
+                    <div className='grid grid-cols-3'>
+                        <div className='col-span-2 flex flex-col h-[1083px]'>
+                            <div className='flex'>
+                                <Container className={`w-[180px] bg-[url('/profilePhoto.webp')] bg-cover bg-[center_-10px]`} />
+                                <Container className=''>
+                                    <IconBox size='sm' IconComponent={GoRocket} />
+                                    <h1>Jacob Lind</h1>
+                                    <p className='!text-xs'>{resumeData.tagline}</p>
+                                    <Location locationText={resumeData.location} size='sm' className={'mb-0'} />
+                                </Container>
                             </div>
-                        </Container>
-                        <Skills />
-                        <Languages />
-                        <Education />
-                        <Referrals />
+                            <Container>
+                                <Header IconComponent={RiUserStarLine} title='Profile' />
+                                <h3>Professional</h3>
+                                <p>{resumeData.profile.professional}</p>
+
+                                <h3 className='mt-4'>Personal</h3>
+                                <p>{resumeData.profile.personal}</p>
+                            </Container>
+                            <Education />
+                            <Referrals />
+                        </div>
+                        <div className='flex flex-col h-[1083px]'>
+                            <Container>
+                                <Header IconComponent={IoHeadsetOutline} title='Contact' />
+                                <div className='flex flex-col gap-2 *:gap-2 *:flex *:items-center'>
+                                    <a href='tel:+4521221945'>
+                                        <FaPhoneAlt size='0.8rem' className='text-[#8e8e92]' />
+                                        <p className='underline underline-offset-2'>+45 21221945</p>
+                                    </a>
+                                    <a href='mailto:contact@jacoblind.me'>
+                                        <FaEnvelope size='0.8rem' className='text-[#8e8e92]' />
+                                        <p className='underline underline-offset-2'>contact@jacoblind.me</p>
+                                    </a>
+                                    <a href='https://jacoblind.me' target='_blank'>
+                                        <FaGlobe size='0.8rem' className='text-[#8e8e92]' />
+                                        <p className='underline underline-offset-2'>jacoblind.me</p>
+                                    </a>
+                                    <a href='https://www.linkedin.com/in/jacoblindseo/' target='_blank'>
+                                        <FaLinkedin size='0.8rem' className='text-[#8e8e92]' />
+                                        <p className='underline underline-offset-2'>linkedin.com/in/jacoblindseo</p>
+                                    </a>
+                                    <a href='https://github.com/lindjacob' target='_blank'>
+                                        <FaGithub size='0.8rem' className='text-[#8e8e92]' />
+                                        <p className='underline underline-offset-2'>github.com/lindjacob</p>
+                                    </a>
+                                </div>
+                            </Container>
+                            <Skills />
+                            <Languages />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={`m-auto w-[794px] h-[calc(1123px*1)] p-5 bg-[#f9f9f9] *:gap-2 *:*:gap-2 *:*:*:gap-2 *:*:*:*:gap-2`}>
+                <div className='h-full overflow-hidden'>
+                    <div className='flex flex-col h-[1083px]'>
+                        <WorkExperience data={resumeData} />
                     </div>
                 </div>
             </div>
