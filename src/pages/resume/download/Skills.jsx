@@ -20,8 +20,8 @@ export default function Skills() {
                         <Skill title={'Java'} />
                         <Skill title={'SQL'} />
                         <Skill title={'GraphQL'} />
-                        <Skill title={'CSS'} />
                         <Skill title={'HTML'} />
+                        <Skill title={'CSS'} />
                     </div>
                 </div>
                 <div className='mt-4'>

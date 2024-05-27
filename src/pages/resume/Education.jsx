@@ -4,6 +4,7 @@ import DotLine from './components/DotLine';
 import DateBox from './components/DateBox';
 import { PiDownloadSimple, PiGraduationCap } from 'react-icons/pi';
 import auLogoWhite from '../../assets/aarhus-university-logo-white.svg';
+import Divider from './components/Divider';
 
 export default function Education() {
     return (
@@ -16,7 +17,7 @@ export default function Education() {
             <div className='flex flex-col md:flex-row justify-between md:items-center'>
                 <div className='mb-4 md:mb-0'>
                     <h3>Aarhus University</h3>
-                    <DotLine text1={`Bachelor's degree`} text2={`Computer Science`} />
+                    <DotLine text1={`Bachelor of Science`} text2={`Computer Science`} />
                 </div>
                 <DateBox dateFromTo={'Aug 2020 - Jun 2023'} />
             </div>
@@ -34,6 +35,21 @@ export default function Education() {
                     Download paper
                 </a>
                 <img src={auLogoWhite} className='w-32 mt-6' />
+            </div>
+            <Divider short className='mt-9 mb-8'/>
+            <div className='flex flex-col md:flex-row justify-between md:items-center mb-4'>
+                <div className='mb-4 md:mb-0'>
+                    <h3>Aarhus University (interrupted)</h3>
+                    <DotLine text1={`Bachelor of Science`} text2={`Medicine`} />
+                </div>
+                <DateBox dateFromTo={'Feb 2015 - Jan 2017'} />
+            </div>
+            <div className='flex flex-col md:flex-row justify-between md:items-center'>
+                <div className='mb-4 md:mb-0'>
+                    <h3>Aarhus University (interrupted)</h3>
+                    <DotLine text1={`Bachelor of Science`} text2={`Molecular Biology`} />
+                </div>
+                <DateBox dateFromTo={'Sep 2013 - Jan 2015'} />
             </div>
         </Container>
     )
