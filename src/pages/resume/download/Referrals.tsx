@@ -6,7 +6,7 @@ import DotLine from './components/DotLine';
 
 export default function Referrals() {
     return (
-        <Container className=''>
+        <Container>
             <Header
                 IconComponent={PiHandHeart}
                 title={'Referrals'}

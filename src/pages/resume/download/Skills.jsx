@@ -40,9 +40,7 @@ export default function Skills() {
                         <Skill title={'Git'} />
                         <Skill title={'Docker'} />
                         <Skill title={'Scrum'} />
-                        <Skill title={'UML Diagrams'} />
-                        <Skill title={'Sequence Diagrams'} />
-                        <Skill title={'ER Diagrams'} />
+                        <Skill title={'UML & ER Diagrams'} />
                         <Skill title={'Flowcharts'} />
                         <Skill title={'Project Management'} />
                         <Skill title={'Strategy'} />

@@ -31,10 +31,8 @@ export default function Skills() {
                     <Skill title={'Command Line'} />
                     <Skill title={'Google Cloud Platform'} />
                     <Skill title={'Java'} />
-                    <Skill title={'UML Diagrams'} />
-                    <Skill title={'Sequence Diagrams'} />
-                    <Skill title={'ER Diagrams'} />
                     <Skill title={'Flowcharts'} />
+                    <Skill title={'UML & ER Diagrams'} />
                 </SkillGroup>
                 <SkillGroup title={'Marketing'}>
                     <Skill title={'SEO'} />
