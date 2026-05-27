@@ -12,8 +12,8 @@ export default function PartnersLogoBar() {
         { src: Dtails, delay: 'delay-[450ms]', className: 'w-28 md:w-32 mb-2' },
         { src: KompetenceKanalen, delay: 'delay-[600ms]', className: 'w-28 md:w-32' },
         { src: Connexio, delay: 'delay-[750ms]', className: 'w-28 md:w-32' },
-        { src: TheTechCollective, delay: '', className: 'w-40 md:w-44' },
-        { src: ImplementConsultingGroup, delay: 'delay-[150ms]', className: 'w-32 md:w-36' }
+        { src: TheTechCollective, delay: 'delay-[900ms]', className: 'w-40 md:w-44' },
+        { src: ImplementConsultingGroup, delay: 'delay-[1050ms]', className: 'w-32 md:w-36' }
     ];
 
     return (
