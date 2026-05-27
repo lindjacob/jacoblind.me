@@ -12,7 +12,6 @@ import { GoRocket } from "react-icons/go";
 import { RiUserStarLine } from "react-icons/ri";
 import resumeData from '../../../resumeData.json';
 import { FaGlobe } from "react-icons/fa";
-import Referrals from './Referrals';
 
 export default function index() {
 
@@ -22,8 +21,14 @@ export default function index() {
                 <div className='h-full overflow-hidden'>
                     <div className='grid grid-cols-3'>
                         <div className='col-span-2 flex flex-col h-[1083px]'>
-                            <div className='flex'>
-                                <Container className={`w-[180px] bg-[url('/profilePhoto.webp')] bg-cover bg-[center_-10px]`} />
+                            <div className='flex items-stretch'>
+                                <Container className="w-[150px] shrink-0 min-h-0 p-0 overflow-hidden">
+                                    <img
+                                        src="/profilePhoto.webp"
+                                        alt="Jacob Lind"
+                                        className="h-full w-full object-cover object-center"
+                                    />
+                                </Container>
                                 <Container className=''>
                                     <IconBox size='sm' IconComponent={GoRocket} />
                                     <h1>Jacob Lind</h1>
@@ -32,15 +37,11 @@ export default function index() {
                                 </Container>
                             </div>
                             <Container>
-                                <Header IconComponent={RiUserStarLine} title='Profile' />
-                                <h3>Professional</h3>
+                                <Header IconComponent={RiUserStarLine} title='Professional profile' />
                                 <p>{resumeData.profile.professional}</p>
-
-                                <h3 className='mt-4'>Personal</h3>
-                                <p>{resumeData.profile.personal}</p>
                             </Container>
                             <Education />
-                            <Referrals />
+                            <Languages />
                         </div>
                         <div className='flex flex-col h-[1083px]'>
                             <Container>
@@ -69,7 +70,6 @@ export default function index() {
                                 </div>
                             </Container>
                             <Skills />
-                            <Languages />
                         </div>
                     </div>
                 </div>

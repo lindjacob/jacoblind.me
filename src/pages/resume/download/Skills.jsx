@@ -14,38 +14,56 @@ export default function Skills() {
                 <div>
                     <h3 className='mb-2'>Programming languages</h3>
                     <div className='flex flex-wrap gap-1'>
-                        <Skill title={'Javascript'} />
+                        <Skill title={'JavaScript'} />
                         <Skill title={'TypeScript'} />
                         <Skill title={'Python'} />
-                        <Skill title={'Java'} />
                         <Skill title={'SQL'} />
                         <Skill title={'GraphQL'} />
-                        <Skill title={'HTML'} />
-                        <Skill title={'CSS'} />
                     </div>
                 </div>
                 <div className='mt-4'>
                     <h3 className='mb-2'>Frameworks</h3>
                     <div className='flex flex-wrap gap-1'>
                         <Skill title={'React'} />
-                        <Skill title={'Next'} />
-                        <Skill title={'Express'} />
-                        <Skill title={'Tailwindcss'} />
-                        <Skill title={'Django'} />
+                        <Skill title={'React Native'} />
+                        <Skill title={'Next.js'} />
+                        <Skill title={'Express.js'} />
+                        <Skill title={'FastAPI'} />
+                        <Skill title={'Tailwind CSS'} />
                     </div>
                 </div>
                 <div className='mt-4'>
-                    <h3 className='mb-2'>Others</h3>
+                    <h3 className='mb-2'>Platforms & Tools</h3>
                     <div className='flex flex-wrap gap-1'>
                         <Skill title={'Git'} />
                         <Skill title={'Docker'} />
                         <Skill title={'Scrum'} />
-                        <Skill title={'UML & ER Diagrams'} />
-                        <Skill title={'Flowcharts'} />
+                        <Skill title={'Google Cloud Platform'} />
+                        <Skill title={'Azure'} />
+                        <Skill title={'BigQuery'} />
+                        <Skill title={'PostgreSQL'} />
+                        <Skill title={'CI/CD'} />
+                    </div>
+                </div>
+                <div className='mt-4'>
+                    <h3 className='mb-2'>Engineering</h3>
+                    <div className='flex flex-wrap gap-1'>
+                        <Skill title={'System Architecture'} />
+                        <Skill title={'API Design'} />
+                        <Skill title={'Data Modeling'} />
+                        <Skill title={'Data Warehousing'} />
+                        <Skill title={'Performance Optimization'} />
+                        <Skill title={'AI Agent Tooling'} />
+                        <Skill title={'Developer Workflow Automation'} />
+                    </div>
+                </div>
+                <div className='mt-4'>
+                    <h3 className='mb-2'>Leadership & Business</h3>
+                    <div className='flex flex-wrap gap-1'>
+                        <Skill title={'Technical Leadership'} />
                         <Skill title={'Project Management'} />
-                        <Skill title={'Strategy'} />
-                        <Skill title={'Entrepeneurship'} />
-                        <Skill title={'Leadership'} />
+                        <Skill title={'Stakeholder Management'} />
+                        <Skill title={'Entrepreneurship'} />
                         <Skill title={'Business Development'} />
                         <Skill title={'Negotiation'} />
                     </div>

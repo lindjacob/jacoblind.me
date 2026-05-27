@@ -9,7 +9,7 @@ export default function WorkExperience({ data }) {
             <SectionHeader
                 IconComponent={PiSuitcaseSimple}
                 title={'Work Experience'}
-                description={`From entrepreneurship to leading technical projects at DEKRA, I've consistently delivered impactful results. My career is a unique blend of marketing and business insight with software development as my tool.`}
+                description={`From entrepreneurship to leading complex technical work for one of Denmark's largest companies, I've consistently delivered impactful results. My career blends marketing and business insight with software development as my tool.`}
             />
             <div className='flex'>
                 <div className='w-[2px] bg-slate-700 mt-3 mb-1' />

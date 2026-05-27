@@ -1,18 +1,35 @@
 {
-    "tagline": "Full Stack Web Developer & Consultant",
+    "tagline": "Agentic-First Full Stack Developer & Consultant",
     "profile": {
-        "professional": "From entrepreneurship to leading technical projects at DEKRA, I've consistently delivered impactful results. My career is a unique blend of marketing and business insight, coupled with two decades of passion-driven development and a formal education in Computer Science. As an extrovert, I seamlessly communicate complex technical and business concepts to diverse audiences, driving collaboration and innovation. I have an insatiable hunger to learn and I am highly motivated by tasks that require me to be innovative, where I can use my creativity and my intuition.",
+        "professional": "Senior full-stack engineer with a track record of taking ownership of complex, high-stakes systems end-to-end. Most recently, as Technical Lead on a multi-million DKK supply-chain platform for one of Denmark's largest companies, I delivered in six months what previous teams had attempted for six years. I work across the stack — React, TypeScript, Next.js, and Python — and move comfortably between architecture, hands-on implementation, and direct collaboration with stakeholders. Alongside delivery, I'm building agentic-first internally — designing AI agent tooling and developer workflow automation that embed LLM agents into our coding lifecycle and CI/CD pipelines. My formal Computer Science training is layered on top of two decades of building and a background in marketing and entrepreneurship that taught me to ship pragmatically with the end user in focus.",
         "personal": "I am an eternal optimist, always seeing the best in people and the world around me. Social and competitive, I thrive on engaging in sports, board games, and continuously learning new things. With dreams of living in various countries, I'm eager to explore and experience all that different cultures have to offer."
     },
-    "location": "Based in Aarhus, Denmark",
+    "location": "Based in Copenhagen, Denmark",
     "workExperience": [
+        {
+            "company": "The Tech Collective",
+            "type": "Full Time",
+            "location": "Hybrid - Copenhagen, Denmark",
+            "dateFromTo": "Sep 2024 - Present",
+            "positions": [
+                {
+                    "position": "Software Engineer II",
+                    "dateFromTo": "Jul 2025 - Present"
+                },
+                {
+                    "position": "Software Engineer",
+                    "dateFromTo": "Sep 2024 - Jun 2025"
+                }
+            ],
+            "description": "Led the technical design and delivery of a mission-critical supply-chain platform for Arla Foods — one of Denmark's largest companies — solving an optimization and data-modeling problem that had remained unresolved for years despite multiple prior teams and significant investment. <br /><br /> As Technical Lead, I owned end-to-end system architecture, technical direction, and hands-on development, working closely with business stakeholders and a small core team. The data model had to support recursive production flows, per-site customization, and continuously evolving business rules. <br /><br /> Built with React, TypeScript, Next.js, and Python (FastAPI + Strawberry GraphQL) on PostgreSQL with JSONB. Performance was tuned through deliberate data modeling, not UI shortcuts. <br /><br /> Within six months we delivered a working core that restored stakeholder confidence. The platform is now in production as a central decision-making system in Arla's supply-chain operations, reducing manual workload, improving visibility, and eliminating several sources of operational error. <br /><br /> Alongside the Arla work, I'm building agentic-first developer tooling for The Tech Collective internally — AI agent harnesses and CI/CD automations that embed LLM agents into the team's coding lifecycle, turning agent-driven development from ad-hoc usage into a structured part of how we ship."
+        },
         {
             "position": "Solutions Architect & Developer",
             "company": "DEKRA",
             "type": "Full Time",
             "location": "Remote - Copenhagen, Denmark",
-            "dateFromTo": "Jun 2022 - Present",
-            "description": "I was re-hired to engineer a comprehensive data warehouse, integrating data from various online channels and internal systems, some of which I had previously developed. This initiative aimed to bolster decision-making and promote a data-driven culture within the company. My process began with in-depth interviews with department directors and managers to identify the most critical KPIs and metrics for insightful analysis. <br /> I successfully designed and implemented a data warehouse in Google BigQuery, orchestrated through a suite of microservices running on Google Cloud Platform (GCP). The backbone of the system was constructed using Node.js and Express.js, ensuring robust and scalable backend operations."
+            "dateFromTo": "Jun 2022 - Sep 2024",
+            "description": "Re-hired to engineer a comprehensive data warehouse, integrating data from various online channels and internal systems, several of which I had previously built. <br /><br /> The process began with in-depth interviews with department directors and managers to identify the most critical KPIs and metrics for the business. I then designed and implemented the warehouse in Google BigQuery, orchestrated through a suite of Node.js and Express.js microservices running on Google Cloud Platform. <br /><br /> The result made operational data accessible to leadership for the first time and supported the company's broader shift toward data-driven decision-making."
         },
         {
             "position": "Backend Developer",
@@ -20,7 +37,7 @@
             "type": "Contract",
             "location": "Remote - Copenhagen, Denmark",
             "dateFromTo": "Feb 2022 - May 2022",
-            "description": "At D.TAILS, I developed backend solutions for custom Shopify platforms using Express.js and PostgreSQL. This role introduced me to agile methodologies, particularly the Scrum process, where I actively participated in weekly sprint planning and architectural meetings. These meetings were crucial in ensuring the scalability and forward compatibility of our systems. <br/> During my tenure, I gained proficiency in utilizing Ngrok to establish secure connections to our test environments, enhancing our development and testing workflows. I also learned to use Sentinel for monitoring and troubleshooting in a microservices architecture, which significantly improved our service reliability and issue resolution speed."
+            "description": "Developed backend solutions for custom Shopify platforms using Express.js and PostgreSQL, contributing to architecture discussions and sprint planning focused on scalability and forward compatibility. <br/><br/> Used Ngrok to expose secure test environments and Sentry to monitor and troubleshoot services in a microservices setup, which improved service reliability and issue resolution speed."
         },
         {
             "position": "IT Consultant",
@@ -28,7 +45,7 @@
             "type": "Contract",
             "location": "Remote - Copenhagen, Denmark",
             "dateFromTo": "Apr 2021 - Mar 2022",
-            "description": "I was hired in as a consultant to drive digitalization initiatives, creating custom software solutions that automated essential operations, streamlined client information processes, and markedly decreased errors and workplace stress. One notable project I led increased operational efficiency by 66%, enabling one person to perform the work previously done by three. <br/> The development process for each project began with comprehensive information gathering from employees and managers. This data was used to construct detailed flowcharts and mockups, which were validated by stakeholders before proceeding. I then outlined the final designs and system architecture. The implementation phase involved developing the backend with Node.js and crafting the frontend with pure JavaScript to ensure compatibility with the existing system architecture."
+            "description": "Hired as a consultant to drive digitalization initiatives, delivering custom software that automated operational workflows and reduced manual errors. One project increased operational efficiency by 66%, allowing the department to reassign two of three roles to other work. <br/><br/> For each project I worked closely with employees and managers to gather requirements, then designed flowcharts, mockups, and system architecture before validating with stakeholders. Implementations were built with Node.js backends and vanilla JavaScript frontends to stay compatible with the existing systems."
         },
         {
             "position": "Marketing Manager",
@@ -36,7 +53,7 @@
             "type": "Full Time",
             "location": "Aarhus, Denmark",
             "dateFromTo": "Feb 2019 - Aug 2020",
-            "description": "At Connexio's I was in charge of their new social media-driven recruitment product, overseeing both the technical and creative aspects of campaigns. Additionally, I designed operational processes and success metrics to boost project efficiency. <br/> Although my primary role focused on managing marketing efforts within a small team, a significant portion of my responsibilities shifted towards technical development. I engineered a backend system using Node.js that seamlessly integrated with our CRM, leveraging Monday.com's GraphQL API. This system automated the addition of leads to the CRM and facilitated communication by sending emails and text messages through third-party software."
+            "description": "At Connexio, I was in charge of their new social media-driven recruitment product, overseeing both the technical and creative aspects of campaigns. Additionally, I designed operational processes and success metrics to boost project efficiency. <br/> Although my primary role focused on managing marketing efforts within a small team, a significant portion of my responsibilities shifted towards technical development. I engineered a backend system using Node.js that seamlessly integrated with our CRM, leveraging Monday.com's GraphQL API. This system automated the addition of leads to the CRM and facilitated communication by sending emails and text messages through third-party software."
         },
         {
             "position": "Founder & Business Owner",

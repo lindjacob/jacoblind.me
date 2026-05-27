@@ -14,35 +14,49 @@ export default function Skills() {
             />
             <div className='flex flex-col gap-6'>
                 <SkillGroup title={'Programming languages'}>
-                    <Skill title={'Javascript'} />
+                    <Skill title={'JavaScript'} />
                     <Skill title={'TypeScript'} />
                     <Skill title={'Python'} />
-                    <Skill title={'Java'} />
                     <Skill title={'SQL'} />
                     <Skill title={'GraphQL'} />
-                    <Skill title={'HTML'} />
-                    <Skill title={'CSS'} />
                 </SkillGroup>
 
                 <SkillGroup title={'Frameworks'}>
                     <Skill title={'React'} />
-                    <Skill title={'Next'} />
-                    <Skill title={'Express'} />
-                    <Skill title={'Tailwindcss'} />
-                    <Skill title={'Django'} />
+                    <Skill title={'React Native'} />
+                    <Skill title={'Next.js'} />
+                    <Skill title={'Express.js'} />
+                    <Skill title={'FastAPI'} />
+                    <Skill title={'Tailwind CSS'} />
                 </SkillGroup>
 
-                <SkillGroup title={'Others'}>
+                <SkillGroup title={'Platforms & Tools'}>
                     <Skill title={'Git'} />
-                    <Skill title={'Google Cloud Platform'} />
                     <Skill title={'Docker'} />
+                    <Skill title={'Google Cloud Platform'} />
+                    <Skill title={'Azure'} />
+                    <Skill title={'BigQuery'} />
+                    <Skill title={'PostgreSQL'} />
+                    <Skill title={'CI/CD'} />
                     <Skill title={'Scrum'} />
-                    <Skill title={'UML & ER Diagrams'} />
-                    <Skill title={'Flowcharts'} />
+                </SkillGroup>
+
+                <SkillGroup title={'Engineering'}>
+                    <Skill title={'System Architecture'} />
+                    <Skill title={'API Design'} />
+                    <Skill title={'Data Modeling'} />
+                    <Skill title={'Data Warehousing'} />
+                    <Skill title={'Performance Optimization'} />
+                    <Skill title={'AI Agent Tooling'} />
+                    <Skill title={'Developer Workflow Automation'} />
+                </SkillGroup>
+
+                <SkillGroup title={'Leadership & Business'}>
+                    <Skill title={'Technical Leadership'} />
                     <Skill title={'Project Management'} />
-                    <Skill title={'Entrepeneurship'} />
+                    <Skill title={'Stakeholder Management'} />
+                    <Skill title={'Entrepreneurship'} />
                     <Skill title={'Business Development'} />
-                    <Skill title={'Leadership'} />
                     <Skill title={'Negotiation'} />
                 </SkillGroup>
             </div>

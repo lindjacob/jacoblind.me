@@ -8,7 +8,7 @@ function PreviousPartners() {
     return (
         <Section className={`justify-center dark:py-20 z-20 relative`}>
             <div className='flex flex-col items-center'>
-                <h2 className={`mb-4 mt-0 text-2xl uppercase text-center ${transitionClasses1}`} ref={ref1}>Recently worked with</h2>
+                <h2 className={`mb-4 mt-0 text-2xl uppercase text-center ${transitionClasses1}`} ref={ref1}>Worked with</h2>
                 <PartnersLogoBar />
             </div>
         </Section>

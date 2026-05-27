@@ -24,7 +24,7 @@ export default function index() {
                     <div className='flex justify-center mb-10'>
                         <div className='px-3 py-2 border-2 border-black-tertiary rounded-lg flex items-center gap-2'>
                             <div className='bg-green-500 size-2 rounded-full animate-ping' />
-                            Available for work
+                            Open to select opportunities
                         </div>
                     </div>
                     <h1>Jacob Lind</h1>
@@ -48,7 +48,7 @@ export default function index() {
                 <div className={`flex flex-col items-center my-20 ${transitionClasses2}`} ref={ref2}>
                     <img src={`/profilePhoto.webp`} className='size-20 object-cover rounded-xl mb-4' />
                     <h3>Feel Free to Reach Out</h3>
-                    <p>Let's start a productive converstaion</p>
+                    <p>Let's start a productive conversation</p>
                     <CtaButtons />
                 </div>
             </div>

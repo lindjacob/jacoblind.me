@@ -20,10 +20,10 @@ const Hero = () => {
 
     return (
         <Section className={`relative`}>
-            <div className='flex flex-col md:flex-row mb-44 2xsm:mb-52' >
+            <div className='flex flex-col md:flex-row mb-24 2xsm:mb-40' >
                 <div className='w-full text-center flex flex-col'>
                     <h1 className={`${transitionClasses1} mb-4 sm:mb-2`} ref={ref1}>Full Stack Developer</h1>
-                    <p className={`subheading text-xl max-w-[520px] md:text-2xl md:max-w-[620px] lg:text-3xl lg:max-w-[800px] self-center ${transitionClasses2}`} ref={ref2}>Building resilient, scalable digital solutions with over two decades of passion-driven development</p>
+                    <p className={`subheading text-xl max-w-[520px] md:text-2xl md:max-w-[620px] lg:text-3xl lg:max-w-[800px] self-center ${transitionClasses2}`} ref={ref2}>A decade of building digital products. Now leading agentic-first systems and the AI tooling behind them.</p>
                 </div>
             </div>
             <img src={`/profilePhoto.webp`} className={`absolute -bottom-5 rounded-xl w-40 left-[calc(50%-5rem)] 2xsm:w-44 2xsm:left-[calc(50%-5.5rem)] md:w-52 md:left-[calc(50%-6.5rem)] lg:w-60 lg:left-[calc(50%-7.5rem)] ${transitionClasses3}`} ref={ref3} />
