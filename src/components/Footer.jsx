@@ -36,7 +36,7 @@ const Footer = () => {
                         <div className='flex flex-wrap lg:justify-between'>
                             <div className='w-50 mr-10 mt-5'>
                                 <div className='mb-1 uppercase text-gray-400 font-semibold'>Email me:</div>
-                                <ArrowLink link='mailto:contact@jacoblind.me' anchorText='contact@jacoblind.me' color='text-white' size='md' />
+                                <ArrowLink link='mailto:jacob.lind2@gmail.com' anchorText='jacob.lind2@gmail.com' color='text-white' size='md' />
                             </div>
                             <div className='mt-5'>
                                 <div className='mb-1 uppercase text-gray-400 font-semibold'>Call me:</div>

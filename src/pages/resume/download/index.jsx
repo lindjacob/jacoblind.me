@@ -51,9 +51,9 @@ export default function index() {
                                         <FaPhoneAlt size='0.8rem' className='text-[#8e8e92]' />
                                         <p className='underline underline-offset-2'>+45 21221945</p>
                                     </a>
-                                    <a href='mailto:contact@jacoblind.me'>
+                                    <a href='mailto:jacob.lind2@gmail.com'>
                                         <FaEnvelope size='0.8rem' className='text-[#8e8e92]' />
-                                        <p className='underline underline-offset-2'>contact@jacoblind.me</p>
+                                        <p className='underline underline-offset-2'>jacob.lind2@gmail.com</p>
                                     </a>
                                     <a href='https://jacoblind.me' target='_blank'>
                                         <FaGlobe size='0.8rem' className='text-[#8e8e92]' />
