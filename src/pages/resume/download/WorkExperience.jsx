@@ -8,7 +8,7 @@ export default function WorkExperience({ data }) {
     const downloadableExperience = [
         techCollective,
         {
-            position: 'Solutions Architect & Developer',
+            position: 'Software Engineer',
             company: 'DEKRA',
             type: 'Full Time',
             location: 'Remote - Copenhagen, Denmark',
@@ -24,7 +24,7 @@ export default function WorkExperience({ data }) {
             description: 'Delivered custom software for digitalization initiatives, automating operational workflows and reducing manual errors. One project increased operational efficiency by 66%, allowing the department to reassign two of three roles to other work.'
         },
         {
-            position: 'Backend Developer',
+            position: 'Backend Engineer',
             company: 'D.TAILS',
             type: 'Contract',
             location: 'Remote - Copenhagen, Denmark',
@@ -37,7 +37,7 @@ export default function WorkExperience({ data }) {
             type: 'Marketing & Entrepreneurship',
             location: 'Aarhus, Denmark',
             dateFromTo: 'Nov 2015 - Aug 2020',
-            description: 'Led marketing, recruitment, SEO, and automation projects while increasingly taking ownership of technical implementation, including CRM integrations, marketing automation, landing pages, and React/WordPress-based conversion optimization.'
+            description: 'Founded a digital marketing and analytics consultancy (two employees), where work evolved from campaign management to data-driven targeting. In a key project, defined measurement requirements end-to-end: user behavior and funnel signals captured via GTM and Google Analytics, transformed into a custom scoring model, and pushed as structured data to HubSpot and Salesforce for individual segmentation and ad retargeting across Google Ads. Owned the full loop — logic design, data specification, and frontend implementation against third-party systems. At Connexio, led social media-driven recruitment campaigns and built a Node.js backend automating CRM lead management via Monday.com\'s GraphQL API.'
         }
     ];
 

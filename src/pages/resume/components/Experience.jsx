@@ -13,18 +13,15 @@ export default function Experience({ position, company, type, location, dateFrom
             <div className='w-full'>
                 <div className='flex flex-col md:flex-row md:justify-between'>
                     <div className='mb-4 md:mb-0'>
-                        <h3>{isMultiPosition ? company : position}</h3>
-                        {isMultiPosition
-                            ? <p>{type}</p>
-                            : <DotLine text1={`${company}`} text2={`${type}`} />
-                        }
+                        <h3>{isMultiPosition ? positions[0].position : position}</h3>
+                        <DotLine text1={company} text2={type} />
                     </div>
                     <DateBox dateFromTo={dateFromTo} />
                 </div>
                 <Location locationText={location} />
-                {isMultiPosition && (
+                {isMultiPosition && positions.length > 1 && (
                     <div className='mt-2 mb-4 flex flex-col gap-3'>
-                        {positions.map((p, idx) => (
+                        {positions.slice(1).map((p, idx) => (
                             <SubPosition key={idx} position={p.position} dateFromTo={p.dateFromTo} />
                         ))}
                     </div>
